@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
  <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
  <link
 rel="stylesheet"
@@ -12,17 +11,19 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome-ie7.min.css" integrity="sha512-YSrvaOXIhYlAE8Qj488Nit2KMcOZzqVwe6C6z8D+N0Wq/YHvzAaQNAaBhBZxpqC0cXtM15HlrjIiMXnNda1xVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
  
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
-}
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: 'Poppins', sans-serif;
+ }
 
+
+ /* header */
 header {
   position: fixed;
   top: 0;
@@ -64,8 +65,10 @@ nav a.active {
     margin-left: 10px;
   }
 }
+/* header */
 
 
+/* div bleu */
 .blue-div {
   margin-top: 5%;
   background-color: rgb(163, 204, 243);
@@ -188,48 +191,36 @@ img:hover {
     transform: translateY(0);
   }
 }
+/* div bleu */
 
-.card-item {
-  margin-top: 10%;
-  padding: 10px;
-  border: none;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-  max-width: 400px;
-}
 
-.card-item:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-}
 
-.card-item-description {
-  font-size: 15px;
-  margin-bottom: 10px;
-  color: rgb(53, 48, 48);
-}
-
-.card-item-description p {
-  font-size: 25px;
-  color: #383333;
-}
-
-.h-text {
+/* div h-text */
+.h {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divise la section en deux colonnes égales */
+  gap: 20px; /* Ajoute un espacement entre les deux colonnes */
   padding-top: 150px;
   margin-left: 60px;
 }
 
-.h-animate h1 {
-  color: #000000;
-  font-size: 30px;
+.l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h h2 {
+  color: #000841;
+  font-size: 60px;
+  font-weight: 450;
 }
 
 .h-animate .text {
   position: relative;
   color: #00C9F3;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 350;
 }
 
 .h-animate .text.first-text {
@@ -258,13 +249,55 @@ img:hover {
   }
 }
 
+.r img {
+  width: 80%;
+  height: 100%;
+}
+
+.h-text .btn{
+  margin-top:5%;
+  margin-left: 10%;
+}
+.h-text .button {
+  display: inline-block;
+  padding: 5px 15px;
+  background-image: linear-gradient(to left,#3e9aa7, #9986bb);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+ 
+}
+
+.h-text .button:hover {
+  background-image: linear-gradient(to right, #3e9aa7, #9379be);
+}
+
+.h-text .button:active {
+  background-image: linear-gradient(to right, #3e9aa7, #7953bb);
+}
+/* div h-text */
+
+
+
+
+
+/*div recherche*/
 .recherche {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom:10%;
 }
-
+.recherche h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .recherche span {
   margin-left: 15%;
 }
@@ -274,102 +307,68 @@ img:hover {
   justify-content: center;
   align-items: center;
 }
+.small-input {
+  width: 100px; /* Ajustez la largeur selon vos préférences */
+}
 
-.recherche .search-box {
-  position: relative;
-  margin-top: 3%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #666666;
-  height: 40px;
-  border-radius: 40px;
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
   padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 14px;
+  flex: 1;
+  margin-right: 10px; /* Ajoutez une marge à droite */
 }
 
-.recherche .search-box:hover > .search-txt {
-  width: 240px;
-  padding: 0 6px;
-}
-
-.recherche .search-box:hover > .search-btn {
-  background: white;
-  color: black;
-}
-
-.recherche .search-btn {
-  color: #eeeeee;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #2f3640;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.recherche .search-btn > i {
-  font-size: 20px;
-}
-
-.recherche .search-txt {
+.search-btn {
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
   border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: white;
-  font-size: 16px;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 0px;
-  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 
-
-.centered-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+.search-btn:hover {
+  background-color: #23527c;
 }
 
 .card-container {
-  display: flex;
+    display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-  max-width: 800px; /* Définissez une largeur maximale pour la flexbox */
-  margin: 0 auto; /* Centrez la flexbox horizontalement */
 }
 
-.card {
-  width: 150px;
-  border: 1px solid #ccc;
+.card1 {
+  width: 200px;
+  background-color: #f9f9f9;
   border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin: 10px;
+  text-align: center;
 }
 
-.card img {
+.card1 img {
   width: 100%;
-  height: auto;
+  max-height: 150px;
+  object-fit: cover;
   border-radius: 5px;
-  margin-bottom: 10px;
 }
 
-.card p {
+.card1 p {
   font-size: 14px;
-  color: #333;
+  margin-top: 10px;
 }
 
-/* Ajoutez des règles de media queries pour rendre les cartes responsive */
 @media (max-width: 768px) {
   .card-container {
     max-width: 400px; /* Réduisez la largeur maximale pour les petits écrans */
@@ -379,72 +378,90 @@ img:hover {
     width: 100%; /* Faites en sorte que les cartes occupent 100% de la largeur */
   }
 }
+/*div recherche*/
 
-
+/* div offre */
 .offre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
 }
-
+.offre h1 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+}
+.offre p {
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0;
+}
 .carte-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px; /* Ajustez l'espacement entre les cartes selon vos préférences */
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
 }
-
 .carte1 {
-  width: 400px;
-  background-color: #f1f1f1;
+  width: 500px;
+  height: 280px;
   padding: 20px;
   border-radius: 5px;
-  text-align: center;
-  animation: fade-in 1s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
 }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .carte1 h2 {
   font-size: 20px;
-  margin-bottom: 10px;
+  color: #5da5bb;
+  margin: 0;
 }
-
+.carte1 ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.carte1 ul li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
 .carte1 p {
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  color: #7cc4c7;
+  margin: 10px 0;
 }
-
+.carte1 span {
+  font-weight: bold;
+  color: #1c879c;
+}
 .carte1 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #04664d;
-  color: #ffffff;
+  background-color: #337ab7;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 10px;
 }
-
-@media (max-width: 768px) {
-  .carte-container {
-    flex-wrap: wrap;
-  }
-  
+.carte1 button:hover {
+  background-color: #23527c;
+}
+ @media (max-width: 768px) {
   .carte1 {
-    width: 100%;
+     width: 100%;
   }
 }
+/* div offre */
+
+
+
+
+
+
+/* description */
+
 .description {
   display: flex;
   flex-direction: column;
@@ -468,11 +485,13 @@ img:hover {
 }
 
 .description img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 }
 
+
+/* ----------- SLIDER ------------ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 .swiper{
@@ -484,7 +503,7 @@ img:hover {
   background-color: var(--bg-color);
 }
 
-/* ----------- SLIDER ------------ */
+
 .swiper{
   width: 100%;
 }
@@ -497,8 +516,8 @@ img:hover {
 }
 
 .card{
-  width: 20em;
-  height: 90%;
+  width: 26em;
+  height: 100%;
   background-color: #fff;
   border-radius: 2em;
   box-shadow: 0 0 2em rgba(0, 0, 0, .2);
@@ -594,20 +613,25 @@ img:hover {
     margin-right: 20%;
   }
 
+
+
+
+
+
 .obj{
   display:flex;
   justify-content: center;
-  text-align: center;
- margin-left: 20%;
- margin-right: 20%;
+text-align: center;
+ margin-left: 30%;
+ margin-right: 30%;
 margin-bottom: 5%;
 }
 
 .animated-list {
   list-style: none;
   padding: 0;
-  width: 500px;
-  margin-left: 10%;
+  width: 650px;
+  margin-left: 25%;
 }
 
 
@@ -641,13 +665,13 @@ background-color: #edf1f7;
 }
 .desc {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* Divise la section en deux colonnes, 1/3 pour l'image et 2/3 pour le contenu */
+  grid-template-columns: 1fr 1fr; /* Divise la section en deux colonnes, 1/3 pour l'image et 2/3 pour le contenu */
   gap: 20px; /* Ajoute un espacement entre les deux colonnes */
 }
 
 .image img{
   margin-top: 25%;
-  margin-left: 20%;
+  margin-right:20%;
   display: flex;
   justify-content: center; /* Centre l'image horizontalement */
   align-items: center; /* Centre l'image verticalement */
@@ -659,9 +683,17 @@ background-color: #edf1f7;
   align-items: center; /* Centre le contenu verticalement */
 }
 
+
+
+
+
+
+
+
+/* div service */
 .services{
 width: 100%;
-height: 200vh;
+height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -669,7 +701,6 @@ flex-direction: column;
 background: #ffffff;
 }
 .s-heading{
-
 text-align: center;
 }
 .s-heading h1{
@@ -710,8 +741,8 @@ height: 150px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  width: 250px;
-  height: 310px;
+  width: 500px;
+  height: 350px;
   padding: 20px 25px;
   box-sizing: border-box;
   margin: 15px;
@@ -747,6 +778,20 @@ animation: bar 0.5s ;
 .s-box:hover .bar{
 display: block;
 }
+
+.s-box p{
+  color: #5e6366;
+  line-height: 1.4;
+}
+.s-box img{
+  background:  transparent; 
+  width: 400px; 
+  height: 150px; 
+  display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
 @keyframes bar {
 0%{
 width: 0px ;
@@ -756,22 +801,16 @@ width:  100px ;
 }
 
 }
+/* div service */
 
-.s-box p{
-  color: #5e6366;
-  line-height: 1.4;
-}
-.s-box img{
-  background:  transparent; 
-  width: 250px; 
-  height: 150px; 
-  display: flex;
-   justify-content: center;
-    align-items: center;
-}
 
+
+
+
+/* div contenu */
 .contenu {
   text-align: center;
+  margin-bottom: 10%;
 }
 
 .contenu h3 {
@@ -802,107 +841,29 @@ width:  100px ;
   margin-top: 0;
 }
 
-.containu .content .half img {
+.contenu .content .half img {
   width: 100%;
   height: auto;
 }
+/* div contenu */
 
 
 
 
-
-
-
-.footer {
-  background-color: #3d8388;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.partie1 {
-  width: 33.33%;
-}
-
-.partie2 {
-  width: 33.33%;
-}
-
-.partie3 {
-  width: 33.33%;
-}
-
-.partie1 p {
-  margin-top: 10px;
-}
-
-.partie1 h3 {
-  margin-left: 5%;
-}
-
-.partie2 ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 10px;
-}
-
-.partie2 li {
-  margin-bottom: 5px;
-}
-
-.partie3 h4 {
-  margin-bottom: 10px;
-}
-
-.reseaux-sociaux a {
-  color: #fff;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.reseaux-sociaux a:hover {
-  color: #ccc;
-}
-
-.partie3 form {
-  display: flex;
-  margin-top: 10px;
-}
-
-.partie3 input[type="email"] {
-  width: 200px;
-  padding: 5px;
-  border-radius: 3px 0 0 3px;
-  border: none;
-}
-
-.partie3 button[type="submit"] {
-  padding: 5px 10px;
-  border-radius: 0 3px 3px 0;
-  border: none;
-  background-color: #86a1d4;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-
+/* div  prix */
 .prix {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10%;
 }
-
-        .partie1 {
-  width: 33.33%;
-
-}
-
-.partie2 {
+.p1 {
   width: 33.33%;
 }
-
-.partie3 {
+.p2 {
+  width: 33.33%;
+}
+.p3 {
   width: 33.33%;
 }
 .prix h3{
@@ -921,21 +882,107 @@ width:  100px ;
     margin-left: 10%;
     margin-right: 10%; 
 }
-h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: #3db5fa;
-}
+
 .prix img{
    margin-left: 30%;
 }
-    </style>
+/* div  prix */
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 200px; /* ou la hauteur souhaitée pour le footer */
+  background-color: #3d8388;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .partie1 {
+  width: 33.33%;
+}
+
+.footer .partie2 {
+  width: 33.33%;
+}
+
+.footer .partie3 {
+  width: 33.33%;
+}
+
+.footer .partie1 p {
+  margin-top: 10px;
+}
+
+.footer .partie1 h3 {
+  margin-left: 5%;
+}
+
+.footer .partie2 ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.footer .partie2 li {
+  margin-bottom: 5px;
+}
+
+.footer .partie3 h4 {
+  margin-bottom: 10px;
+}
+
+.footer .reseaux-sociaux a {
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.footer .reseaux-sociaux a:hover {
+  color: #ccc;
+}
+
+.footer .partie3 form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer .partie3 input[type="email"] {
+  width: 200px;
+  padding: 5px;
+  border-radius: 3px 0 0 3px;
+  border: none;
+}
+
+.footer .partie3 button[type="submit"] {
+  padding: 5px 10px;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  background-color: #86a1d4;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* footer */
+
+
+
+  </style>
 </head>
 <body>
-    <header>
+
+
+
+
+
+<header>
         <a href="#" class="logo">Host Oplus</a>
         <nav>
             <a href="#" class="active">Home</a>
@@ -947,107 +994,225 @@ h2{
             <a href="#">Marketplace</a>
             <a href="#">Login</a>
         </nav>
-    </header>
+</header>
 
-    <div class="h-text">
-      <div class="h-animate">
-        <h1>Host Oplus</h1>
-        <span class="text first-text">&nbsp;</span>
-        <span class="text sec-text">hebergement Web Maroc</span>
-      </div>
+
+
+
+
+
+
+
+<div class="h-text  h">
+  <div class="l">
+        <div class="h-animate">
+            <h2>Host Oplus</h2>
+            <span class="text first-text">&nbsp;</span>
+            <span class="text sec-text">hebergement Web Maroc</span>
+        </div>
+        <div class="btn">
+            <button class="button">s'inscrire</button>
+            <button class="button">service</button> 
+        </div>
   </div>
+  <div class="r">
+        <img src="IMG/Capture d'écran 2023-07-12 201603.png" alt="">
+  </div>  
+</div>
 
 
 
-    <div class="blue-div">
-        <div class="left-div">
-            <div class="circle-container">
+
+
+
+
+
+
+
+
+
+
+
+<div class="blue-div">
+    <div class="left-div">
+        <div class="circle-container">
                 <div class="half-circle">
-                  <img src="kisspng-semicircle-geometric-shape-geometry-free-range-eggs-5ae911ac678113.977680541525223852424.png" alt="Votre image">
+                  <img src="IMG/kisspng-semicircle-geometric-shape-geometry-free-range-eggs-5ae911ac678113.977680541525223852424.png" alt="Votre image">
                 </div>
-              </div>
+        </div>
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_tco2osel.json" background="transparent" speed="1" style="width: 500px; height: 500px;"></lottie-player>
-        </div>
-        <div class="right-div">
-            <img src="cube-png-18939.png" alt="Votre image">
-            <h1>HEBERGEMENT ILLIMITE</h1>
-            <h1>Notre hébergement Cloud fournit une large gamme de fonctionnalités</h1>
-            <p>Espace Web illimitées et bande passante 100% SSD Héberger des sites Web avec Autoscoding Platform Ressources SSL Gratuit LetsEncrypt, Google-Based DNS Servers et content Delivery Network</p>
-            <button class="button">commencer maintenant</button>
-        </div>
     </div>
+    <div class="right-div">
+        <img src="IMG/cube-png-18939.png" alt="Votre image">
+        <h1>HEBERGEMENT ILLIMITE</h1>
+        <h1>Notre hébergement Cloud fournit une large gamme de fonctionnalités</h1>
+        <p>Espace Web illimitées et bande passante 100% SSD Héberger des sites Web avec Autoscoding Platform Ressources SSL Gratuit LetsEncrypt, Google-Based DNS Servers et content Delivery Network</p>
+        <button class="button">commencer maintenant</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="recherche">
+
+
+
+
+
   <div class="h-text">
     <h2>UN DOMAINE GRATUIT AVEC VOTRE PACK D'HÉBERGEMENT</h2>
+
     <div class="h-animate">
       <span class="text first-text">&nbsp;</span>
       <span class="text sec-text" style="font-size: 15px;">PRIX DE RENOUVELLEMENT LE PLUS BAS</span>
       <p>Vérifiez la disponibilité de votre nom de domaine</p>
     </div>
+
+
     <div class="search-box">
-      <input type="text" name="" class="search-txt" placeholder="Tapez pour rechercher" />
-      <a class="search-btn" href="#">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </a>
+      <input type="text" class="search-input small-input" placeholder="Ex:exemple.com">
+      <button class="search-btn">Rechercher</button>
     </div>
-    <p style="margin-top: 4%; margin-bottom: 4%;">Nous disposons de plus de 200 extensions de noms de domaine .</p>
+  </div>
+
+
+
+
+  <p style="margin-top: 4%; margin-bottom: 4%;">Nous disposons de plus de 200 extensions de noms de domaine .</p>
   <div class="card-container">
-    <div class="card">
+    <div class="card1">
       <img src="image1.jpg" alt="Image 1">
       <p>120.00 Dhs /an</p>
     </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
+
+    <div class="card1">
+      <img src="IMG/Capture d'écran 2023-07-13 211842.png" alt="Image 2">
       <p>120.00 Dhs /an</p>
     </div>
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
+
+    <div class="card1">
+      <img src="IMG/Capture d'écran 2023-07-13 211848.jpg" alt="Image 2">
       <p>160.00 Dhs /an</p>
     </div>
-     <div class="card">
-      <img src="image2.jpg" alt="Image 2">
+
+    <div class="card1">
+      <img src="IMG/Capture d'écran 2023-07-13 211856.jpg" alt="Image 2">
       <p>320.00 Dhs /an</p>
     </div>
-     <div class="card">
-      <img src="image2.jpg" alt="Image 2">
+
+    <div class="card1">
+      <img src="IMG/Capture d'écran 2023-07-13 211903.jpg" alt="Image 2">
       <p>500.00 Dhs /an</p>
     </div> 
-    <div class="card">
-      <img src="image2.jpg" alt="Image 2">
+
+    <div class="card1">
+      <img src="IMG/Capture d'écran 2023-07-13 211910.jpg" alt="Image 2">
       <p>450.00 Dhs /an</p>
     </div>
-</div>
+  </div>
+  
+  
+
+
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="offre">
-  <h1>VOTRE SITE MÉRITE LE MEILLEUR</h1>
-  <p>Fièrement hébergeur Web depuis 2001</p>
-  <div class="carte-container">
-    <div class="carte1">
-      <h2>Hébergement Mutualisé</h2>
-      <p></p>
-      <button>CONSULTEZ NOS OFFRES</button>
-    </div>
-    <div class="carte1">
-      <h2>Serveurs VPS Cloud</h2>
-      <p></p>
-      <button>NOS SERVEUR VPS CLOUD</button>
-    </div>
-  </div>
+        <h1>VOTRE SITE MÉRITE LE MEILLEUR</h1>
+        <p>Fièrement hébergeur Web depuis 2001</p>
+        <div class="carte-container">
+          <div class="carte1">
+            <h2>Hébergement Mutualisé</h2>
+            <ul>
+              <li>- GRATUIT > 1 Domaine + 1 Certificat SSL + Migration</li>
+              <li>- Node.js, Python, Ruby, PHP et Perl</li>
+              <li>- Haute disponibilité, Sécurisé par CloudLinux et Imunify360</li>
+              <li>- Datacenter avec redondance N+1 à tous les niveaux</li>
+            </ul>
+            <p>À partir de <span>28.30 Dhs /mois</span></p>
+            <button>CONSULTEZ NOS OFFRES</button>
+          </div>
+          <div class="carte1">
+            <h2>Serveurs VPS Cloud</h2>
+            <ul>
+              <li>- Le choix entre des serveurs Managed ou Unmanaged</li>
+              <li>- Disque durs 100% SSD</li>
+              <li>- Plusieurs choix de licences et systèmes d'exploitation</li>
+              <li>- Notre propre plateforme gérée 100% par ADK Media</li>
+            </ul>
+            <p>À partir de  <span>159 Dhs /mois</span></p>
+            <button>NOS SERVEUR VPS CLOUD</button>
+          </div>
+        </div>
 </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="description">
     <h1>Hébergement Web de haute qualité pour les entreprises - Host Oplus.</h1>
     <p>Host Oplus est une entreprise spécialisée dans l'hébergement et la gestion de sites web pour les entreprises. Nous fournissons des solutions d'hébergement web haut de gamme, adaptées aux besoins de nos clients. Notre mission est d'offrir un service fiable, sécurisé et évolutif pour répondre aux exigences de leurs activités en ligne.</p>
     <p>Nous sommes convaincus que la réussite de nos clients est notre réussite, c'est pourquoi nous offrons un support technique de qualité, une surveillance en temps réel de nos serveurs, des mises à jour régulières des logiciels et des outils de sécurité avancés pour protéger les sites web de nos clients contre les menaces en ligne. Nous proposons également des solutions personnalisées pour répondre aux besoins spécifiques de chaque entreprise.</p>
     <p>Nos clients font confiance à Host Oplus pour notre expertise en matière d'hébergement web, notre engagement envers la qualité et la sécurité de nos services, ainsi que notre engagement à fournir un service client exceptionnel. Nous avons aidé de nombreuses entreprises à réussir en ligne, et nous sommes prêts à travailler avec vous pour vous aider à atteindre vos objectifs en ligne.</p>
-    <img src="image.jpg" alt="Image"> 
+    <img src="IMG/Capture d'écran 2023-07-14 193255.png" alt="Image"> 
 </div>
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="container">
   <h1>L'HÉBERGEMENT LINUX EN ILLIMITÉ AVEC CPANEL ET 100% SSD</h1>
   <p>Découvrez nos offres d'Hébergement de Site WEB en illimité avec cpanel et 100% ssd, aujourd'hui nous offrons un nouveau service rassemblant la rapidité et la fiabilité pour tous.</p>
@@ -1056,8 +1221,7 @@ h2{
 
   <div class="swiper-wrapper">
       <div class="card swiper-slide">
-        <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
-
+          <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
           <h4 style="font-size:large;">50<span style="font-size:smaller;">GB</span></h4>
           <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante</p>
           <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données 3</p>
@@ -1067,178 +1231,143 @@ h2{
           <p style="border-bottom: 1px solid #727272; width: 80%;">2Tbps DDoS Protection</p>
           <p style="border-bottom: 1px solid #727272; width: 80%;">Certificats SSL</p>
           <p>Builder Web</p>
-          <h4 style="font-size: large; margin-top: 10%;">
-            299 DHs <span style="font-size: smaller; margin-left: 10px;"><s>499 DHs</s></span>
-          </h4>
-          
-          
+          <h4 style="font-size: large; margin-top: 10%;">299 DHs <span style="font-size: smaller; margin-left: 10px;"><s>499 DHs</s></span> </h4>
           <p>An</p>
           <button class="card__btn">Commencer</button>
       </div>
+
+      <div class="card swiper-slide">
+          <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
+          <h4 style="font-size:large;">100<span style="font-size:smaller;">GB</span></h4>
+          <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante illimité</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données 20</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Sous Domaiines 5</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">cPanel Control Panel</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">200+ One-Click Installs</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">2Tbps DDoS Protection</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Certificats SSL</p>
+          <p>Builder Web</p>
+          <h4 style="font-size: large; margin-top: 10%;"> 499 DHs <span style="font-size: smaller; margin-left: 10px;"><s>599 DHs</s></span></h4>
+          <p>An</p>
+          <button class="card__btn">Commencer</button>
+      </div>
+
+      <div class="card swiper-slide">
+          <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
+          <h4 style="font-size:large;">250<span style="font-size:smaller;">GB</span></h4>
+          <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante illimité</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données 50</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Sous Domaiines 10</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">cPanel Control Panel</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">200+ One-Click Installs</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">2Tbps DDoS Protection</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Certificats SSL</p>
+          <p>Builder Web</p>
+          <h4 style="font-size: large; margin-top: 10%;"> 999 DHs <span style="font-size: smaller; margin-left: 10px;"><s>1300 DHs</s></span> </h4>
+          <p>An</p>
+          <button class="card__btn">Commencer</button>
+      </div>
+
+      <div class="card swiper-slide">
+          <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
+          <h4 style="font-size:large;">500<span style="font-size:smaller;">GB</span></h4>
+          <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante illimité</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données 100</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Sous Domaiines 50</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">cPanel Control Panel</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">200+ One-Click Installs</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">2Tbps DDoS Protection</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Certificats SSL</p>
+          <p>Builder Web</p>
+          <h4 style="font-size: large; margin-top: 10%;"> 1500 DHs <span style="font-size: smaller; margin-left: 10px;"><s>2300 DHs</s></span> </h4>
+          <p>An</p>
+          <button class="card__btn">Commencer</button>
+      </div>
+
       <div class="card swiper-slide">
         <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
-
-          <h4 style="font-size:large;">50<span style="font-size:smaller;">GB</span></h4>
-          <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données 3</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Sous Domaiines 2</p>
+          <h4 style="font-size:large;">oo<span style="font-size:smaller;">GB</span></h4>
+          <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante illimité</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données illimité</p>
+          <p style="border-bottom: 1px solid #727272; width: 80%;">Sous Domaiines illimité</p>
           <p style="border-bottom: 1px solid #727272; width: 80%;">cPanel Control Panel</p>
           <p style="border-bottom: 1px solid #727272; width: 80%;">200+ One-Click Installs</p>
           <p style="border-bottom: 1px solid #727272; width: 80%;">2Tbps DDoS Protection</p>
           <p style="border-bottom: 1px solid #727272; width: 80%;">Certificats SSL</p>
           <p>Builder Web</p>
-          <h4 style="font-size: large; margin-top: 10%;">
-            299 DHs <span style="font-size: smaller; margin-left: 10px;"><s>499 DHs</s></span>
-          </h4>
-          
-          
+          <h4 style="font-size: large; margin-top: 10%;"> 1699 DHs <span style="font-size: smaller; margin-left: 10px;"><s>2499 DHs</s></span></h4>
           <p>An</p>
           <button class="card__btn">Commencer</button>
       </div>
-      <div class="card swiper-slide">
-        <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
 
-          <h4 style="font-size:large;">50<span style="font-size:smaller;">GB</span></h4>
-          <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données 3</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Sous Domaiines 2</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">cPanel Control Panel</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">200+ One-Click Installs</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">2Tbps DDoS Protection</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Certificats SSL</p>
-          <p>Builder Web</p>
-          <h4 style="font-size: large; margin-top: 10%;">
-            299 DHs <span style="font-size: smaller; margin-left: 10px;"><s>499 DHs</s></span>
-          </h4>
-          
-          
-          <p>An</p>
-          <button class="card__btn">Commencer</button>
-      </div>
-      <div class="card swiper-slide">
-        <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
-
-          <h4 style="font-size:large;">50<span style="font-size:smaller;">GB</span></h4>
-          <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données 3</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Sous Domaiines 2</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">cPanel Control Panel</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">200+ One-Click Installs</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">2Tbps DDoS Protection</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Certificats SSL</p>
-          <p>Builder Web</p>
-          <h4 style="font-size: large; margin-top: 10%;">
-            299 DHs <span style="font-size: smaller; margin-left: 10px;"><s>499 DHs</s></span>
-          </h4>
-          
-          
-          <p>An</p>
-          <button class="card__btn">Commencer</button>
-      </div>
-      <div class="card swiper-slide">
-        <h3 style="background-color: #000000; color: #ffffff; margin-bottom: 10%; padding: 1em; border-radius: 0.5em; text-align: center; text-transform: uppercase; letter-spacing: 2px;">PERSONNEL</h3>
-
-          <h4 style="font-size:large;">50<span style="font-size:smaller;">GB</span></h4>
-          <p style="border-bottom: 1px solid #727272; width: 80%; ">Bande Passante</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Base de données 3</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Sous Domaiines 2</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">cPanel Control Panel</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">200+ One-Click Installs</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">2Tbps DDoS Protection</p>
-          <p style="border-bottom: 1px solid #727272; width: 80%;">Certificats SSL</p>
-          <p>Builder Web</p>
-          <h4 style="font-size: large; margin-top: 10%;">
-            299 DHs <span style="font-size: smaller; margin-left: 10px;"><s>499 DHs</s></span>
-          </h4>
-          
-          
-          <p>An</p>
-          <button class="card__btn">Commencer</button>
-      </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
 
 
 <div class="objectif">
   <h2 class="obj">Nous vous créons un site internet clés en main</h2>
   <p class="obj">De nombreuses fonctionnalités disponibles. Réalisez vos objectifs en demandant l'ajout de fonctionnalités utiles pour votre site internet. Vous pourrez en ajouter plus tard si vous n'avez pas besoin maintenant.</p>
-<div class="desc">
-  
-  <div class="content">
-    <ul class="animated-list">
-      <li>
-        Design responsive adapté à tous les supports : PC, smartphone, tablette ...</li>
-      <li>Contrôle total de votre site via un accès administrateur .</li>
-      <li>Installation d’un chat pour engager la conversation avec vos visiteurs .</li>
-      <li>Installation et configuration d’un blog dans votre site pour partager votre expertise.</li>
-      <li>Installation d'applications indispensables d'optimisation, gestion des cookies …</li>
-      <li>Couverture d’accueil, images catégories, bannières,  etc...</li>
-    </ul>
-  </div>
-  <div class="image">
-    <img src="Capture d'écran 2023-07-12 201545.png">
+  <div class="desc">
+      <div class="content">
+      <ul class="animated-list">
+         <li>Design responsive adapté à tous les supports : PC, smartphone, tablette ...</li>
+         <li>Contrôle total de votre site via un accès administrateur .</li>
+         <li>Installation d’un chat pour engager la conversation avec vos visiteurs .</li>
+         <li>Installation et configuration d’un blog dans votre site pour partager votre expertise.</li>
+         <li>Installation d'applications indispensables d'optimisation, gestion des cookies …</li>
+         <li>Couverture d’accueil, images catégories, bannières,  etc...</li>
+      </ul>
+      </div>
+      <div class="image">
+          <img src="IMG/Capture d'écran 2023-07-12 201603.jpg">
+      </div>
   </div>
 </div>
-</div>
+
+
+
+
+
+
+
+
 
 
 
 <section class="services" id="services">
-  <div class="s-heading">
-    <h1 style="color: #000;">Création site Internet au Maroc</h1>
-    <p>Des sites beaux et fonctionnels, pour mieux présenter votre activité et vous aider à vendre</p>
-  </div>
-  <div class="s-box-container">
-    <div class="s-box">
-      <div class="bar"></div>
-      <span class="img">
-        <img src="Capture d'écran 2023-07-13 120053.png" alt="" >
-      </span>
-      <h2>Création de Site Vitrine</h2>
-      <p>Vous souhaitez faire connaitre votre société sur internet ? Vous souhaitez crer votre vitrine pour présenter vos ..</p>
+    <div class="s-heading">
+        <h1 style="color: #000;">Création site Internet au Maroc</h1>
+        <p>Des sites beaux et fonctionnels, pour mieux présenter votre activité et vous aider à vendre</p>
     </div>
-    <div class="s-box">
-      <div class="bar"></div>
-      <span class="img">
-        <img src="Capture d'écran 2023-07-13 120053.png" alt="" >
-      </span>
-      <h2>Création de Site Vitrine</h2>
-      <p>Vous souhaitez faire connaitre votre société sur internet ? Vous souhaitez crer votre vitrine pour présenter vos ..</p>
+    <div class="s-box-container">
+        @foreach ($cartes as $carte)
+        <div class="s-box">
+            <div class="bar"></div>
+            <span class="img">
+                <img src="{{ asset('IMG/' . $carte->imgcarte) }}" alt="">
+            </span>
+            <h2>{{ $carte->titrecarte }}</h2>
+            <p>{{ $carte->desccarte }}</p>
+        </div>
+        @endforeach
     </div>
-    <div class="s-box">
-      <div class="bar"></div>
-      <span class="img">
-        <img src="Capture d'écran 2023-07-13 120053.png" alt="" >
-      </span>
-      <h2>Création de Site Vitrine</h2>
-      <p>Vous souhaitez faire connaitre votre société sur internet ? Vous souhaitez crer votre vitrine pour présenter vos ..</p>
-    </div>
-    <div class="s-box">
-      <div class="bar"></div>
-      <span class="img">
-        <img src="Capture d'écran 2023-07-13 120053.png" alt="" >
-      </span>
-      <h2>Création de Site Vitrine</h2>
-      <p>Vous souhaitez faire connaitre votre société sur internet ? Vous souhaitez crer votre vitrine pour présenter vos ..</p>
-    </div>
-    <div class="s-box">
-      <div class="bar"></div>
-      <span class="img">
-        <img src="Capture d'écran 2023-07-13 120053.png" alt="" >
-      </span>
-      <h2>Création de Site Vitrine</h2>
-      <p>Vous souhaitez faire connaitre votre société sur internet ? Vous souhaitez crer votre vitrine pour présenter vos ..</p>
-    </div>
-    <div class="s-box">
-      <div class="bar"></div>
-      <span class="img">
-        <img src="Capture d'écran 2023-07-13 120053.png" alt="" >
-      </span>
-      <h2>Création de Site Vitrine</h2>
-      <p>Vous souhaitez faire connaitre votre société sur internet ? Vous souhaitez crer votre vitrine pour présenter vos ..</p>
-    </div>
-  </div>
 </section>
+
+
+
+
+
+
+
 
 
 <div class="contenu">
@@ -1248,40 +1377,47 @@ h2{
     <div class="half half1">
       <h5>NOS PRODUITS, VOTRE MARQUE</h5>
       <img src="chemin_vers_l'image.png" alt="Image">
-      <p>Paragraphe de la moitié gauche</p>
+      <p>Nous mettons à votre disposition un espace client 100% marque blanche, que vous pouvez fournir à vos clients avec votre propre logo, pour gérer leurs commandes, factures, produits et noms de domaine</p>
     </div>
     <div class="half">
-      <h5>NOS PRODUITS, VOTRE MARQUE</h5>
+      <h5>VOUS ÊTES LIBRE DE FIXER VOS PROFITS</h5>
       <img src="chemin_vers_l'image.png" alt="Image">
-      <p>Paragraphe de la moitié droite</p>
+      <p>Nous fournissons des produits très compétitifs dont vous pouvez modifier le nom et les prix, sans aucune mention de Host Oplus, vous pouvez fixer les marges que vous souhaitez</p>
     </div>
   </div>
 </div>
 
 
 
-<h2>VOS PRIX JUSQU'À -50% COMPARÉS AUX PRIX DE NOS PRODUITS</h2>
-    <div class="prix">
-     
-        <div class="p1">
-<img src="Capture d'écran 2023-07-13 154446.png" alt="">
-<h3>LES MEILLEURS PRIX DE
-    L'HÉBERGEMENT WEB</h3>
-    <p>Des produits d'hébergement Web très bien étudiés, avec des prix et caractéristiques défiant toute concurrence</p>
-        </div>
-        <div class="p2">
-<img src="Capture d'écran 2023-07-13 154452.png" alt="">
-<h3>DES CENTAINES D'EXTENSIONS
-    DE NOMS DE DOMAINE</h3>
+
+
+
+
+
+<h2 style="display: flex;  justify-content: center;  align-items: center; margin-left: 10%; margin-right: 10%; color: #3db5fa;" >VOS PRIX JUSQU'À -50% COMPARÉS AUX PRIX DE NOS PRODUITS</h2>
+<div class="prix">
+  
+  <div class="p1">
+     <img src="IMG/Capture d'écran 2023-07-13 154446.png" alt="">
+     <h3>LES MEILLEURS PRIX DE L'HÉBERGEMENT WEB</h3>
+     <p>Des produits d'hébergement Web très bien étudiés, avec des prix et caractéristiques défiant toute concurrence</p>
+  </div>
+  <div class="p2">
+    <img src="IMG/Capture d'écran 2023-07-13 154452.png" alt="">
+    <h3>DES CENTAINES D'EXTENSIONS DE NOMS DE DOMAINE</h3>
     <p>Offrez des centaines d'extensions de noms de domaine à vos clients, aux meilleurs prix du marché, avec gestion en marque blanche</p>
-        </div>
-        <div class="p3">
-<img src="Capture d'écran 2023-07-13 154459.png" alt="">
-<h3>TOUTE NOTRE EXPERTISE
-    A VOTRE DISPOSITION</h3>
+  </div>
+  <div class="p3">
+    <img src="IMG/Capture d'écran 2023-07-13 154459.png" alt="">
+    <h3>TOUTE NOTRE EXPERTISE A VOTRE DISPOSITION</h3>
     <p>Présents sur le marché de l'hébergement Web depuis 2010, nous mettons toute notre expérience et savoir-faire au profit de votre business</p>
-        </div>
-    </div>
+  </div>
+</div>
+
+
+
+
+
 
 
 <footer class="footer">
@@ -1313,6 +1449,7 @@ h2{
 </footer>
 
 
+
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -1336,7 +1473,11 @@ h2{
   });
 </script>
 
-    <script>
+
+
+
+
+<script>
   
       const txt = document.querySelector(".sec-text");
       const txtLoad = () => {
@@ -1357,9 +1498,14 @@ h2{
       
       
       
-      </script>
+</script>
 
-    <script>
+
+
+
+
+
+<script>
   
       const text = document.querySelector(".sec-text");
       const textLoad = () => {
@@ -1379,8 +1525,7 @@ h2{
       
       textLoad();
       setInterval(textLoad, 24000);
-      </script>
-
+ </script>
 
 </body>
 </html>

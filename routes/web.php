@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CARTEController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('home');
-});
+});*/
+
+/*Route::get('/', function () {
+    $cartes = \App\Models\CARTE::all();
+    return view('home', ['cartes' => $cartes]);
+});*/
+
+Route::get('/', [CARTEController::class, 'index']);
