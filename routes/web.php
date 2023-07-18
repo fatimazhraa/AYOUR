@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CARTEController;
-
+use App\Http\Controllers\RechercheController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +24,5 @@ use App\Http\Controllers\CARTEController;
 });*/
 
 Route::get('/', [CARTEController::class, 'index']);
+Route::get('/card/{id}', [CARTEController::class, 'showDetails'])->name('card.details');
+Route::post('/recherche', [RechercheController::class, 'verifierDisponibilite'])->name('recherche');

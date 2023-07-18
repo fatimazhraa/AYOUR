@@ -23,49 +23,6 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
  }
 
 
- /* header */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 25px;
-  color: #080808;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav a {
-  font-size: 15px;
-  color: #080808;
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 20px;
-  transition: .3s;
-}
-nav a:hover,
-nav a.active {
-  color: #0ef;
-}
-@media (max-width: 768px) {
-  header {
-    padding: 20px 10px;
-  }
-  
-  nav a {
-    font-size: 14px;
-    margin-left: 10px;
-  }
-}
-/* header */
 
 
 /* div bleu */
@@ -76,6 +33,7 @@ nav a.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom:10%;
 }
 
 @media (max-width: 768px) {
@@ -195,91 +153,12 @@ img:hover {
 
 
 
-/* div h-text */
-.h {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Divise la section en deux colonnes égales */
-  gap: 20px; /* Ajoute un espacement entre les deux colonnes */
-  padding-top: 150px;
-  margin-left: 60px;
-}
 
-.l {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.h h2 {
-  color: #000841;
-  font-size: 60px;
-  font-weight: 450;
-}
 
-.h-animate .text {
-  position: relative;
-  color: #00C9F3;
-  font-size: 30px;
-  font-weight: 350;
-}
 
-.h-animate .text.first-text {
-  color: #0e0d0d;
-}
 
-.text.sec-text:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  border-left: 2px solid #0a768b;
-  animation: animate 4s steps(12) infinite;
-}
 
-@keyframes animate {
-  40%,
-  60% {
-    left: calc(100% + 4px);
-  }
-  100% {
-    left: 0%;
-  }
-}
-
-.r img {
-  width: 80%;
-  height: 100%;
-}
-
-.h-text .btn{
-  margin-top:5%;
-  margin-left: 10%;
-}
-.h-text .button {
-  display: inline-block;
-  padding: 5px 15px;
-  background-image: linear-gradient(to left,#3e9aa7, #9986bb);
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
- 
-}
-
-.h-text .button:hover {
-  background-image: linear-gradient(to right, #3e9aa7, #9379be);
-}
-
-.h-text .button:active {
-  background-image: linear-gradient(to right, #3e9aa7, #7953bb);
-}
-/* div h-text */
 
 
 
@@ -380,11 +259,16 @@ img:hover {
 }
 /*div recherche*/
 
+
+
+
+
 /* div offre */
 .offre {
   text-align: center;
   padding: 20px;
   background-color: #fff;
+  margin-bottom:10%;
 }
 .offre h1 {
   font-size: 28px;
@@ -453,6 +337,50 @@ img:hover {
      width: 100%;
   }
 }
+/* Ajoutez vos styles par défaut ici */
+
+/* Styles pour les écrans de taille normale */
+
+/* Styles pour les appareils mobiles */
+@media (max-width: 767px) {
+  .carte-container {
+    margin-top: 10px; /* Ajustez la marge supérieure selon vos préférences */
+  }
+
+  .carte1 {
+    width: 100%; /* Faites en sorte que la carte occupe 100% de la largeur */
+    height: auto; /* Ajustez la hauteur automatiquement en fonction du contenu */
+  }
+
+  .carte1 h2 {
+    font-size: 18px; /* Ajustez la taille de police selon vos préférences */
+  }
+
+  .carte1 ul li {
+    font-size: 12px; /* Ajustez la taille de police selon vos préférences */
+  }
+
+  .carte1 p {
+    font-size: 16px; /* Ajustez la taille de police selon vos préférences */
+  }
+
+  .carte1 button {
+    font-size: 12px; /* Ajustez la taille de police selon vos préférences */
+    padding: 8px 16px; /* Ajustez le padding selon vos préférences */
+    margin-top: 8px; /* Ajustez la marge supérieure selon vos préférences */
+  }
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Ajoutez vos styles spécifiques aux tablettes ici */
+}
+
+/* Styles pour les écrans plus larges */
+@media (min-width: 1024px) {
+  /* Ajoutez vos styles spécifiques aux écrans plus larges ici */
+}
+
 /* div offre */
 
 
@@ -471,6 +399,7 @@ img:hover {
   height: 100vh;
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom:10%;
 }
 
 .description h1 {
@@ -489,6 +418,44 @@ img:hover {
   height: 300px;
   border-radius: 50%;
 }
+/* Ajoutez vos styles par défaut ici */
+
+/* Styles pour les écrans de taille normale */
+
+/* Styles pour les appareils mobiles */
+@media (max-width: 767px) {
+  .description {
+    margin-left: 20px; /* Ajustez la marge gauche selon vos préférences */
+    margin-right: 20px; /* Ajustez la marge droite selon vos préférences */
+    padding: 10px; /* Ajustez le padding selon vos préférences */
+  }
+
+  .description h1 {
+    font-size: 20px; /* Ajustez la taille de police selon vos préférences */
+    margin-bottom: 8px; /* Ajustez la marge inférieure selon vos préférences */
+  }
+
+  .description p {
+    font-size: 14px; /* Ajustez la taille de police selon vos préférences */
+    margin-bottom: 16px; /* Ajustez la marge inférieure selon vos préférences */
+  }
+
+  .description img {
+    width: 200px; /* Ajustez la largeur de l'image selon vos préférences */
+    height: 200px; /* Ajustez la hauteur de l'image selon vos préférences */
+    border-radius: 50%;
+  }
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Ajoutez vos styles spécifiques aux tablettes ici */
+}
+
+/* Styles pour les écrans plus larges */
+@media (min-width: 1024px) {
+  /* Ajoutez vos styles spécifiques aux écrans plus larges ici */
+}
 
 
 /* ----------- SLIDER ------------ */
@@ -501,6 +468,7 @@ img:hover {
   align-items: center;
   height: 100vh;
   background-color: var(--bg-color);
+  margin-bottom:10%;
 }
 
 
@@ -612,41 +580,95 @@ img:hover {
     margin-left: 20%;
     margin-right: 20%;
   }
+/* Ajoutez vos styles par défaut ici */
+
+/* Styles pour les écrans de taille normale */
+
+/* Styles pour les appareils mobiles */
+@media (max-width: 767px) {
+  .container {
+    margin-left: 10px; /* Ajustez la marge gauche selon vos préférences */
+    margin-right: 10px; /* Ajustez la marge droite selon vos préférences */
+  }
+
+  .swiper-wrapper {
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 10px; /* Ajustez la marge horizontale selon vos préférences */
+  }
+
+  .card__title {
+    font-size: 1.2rem; /* Ajustez la taille de police selon vos préférences */
+  }
+
+  .card__text {
+    font-size: 0.9rem; /* Ajustez la taille de police selon vos préférences */
+  }
+
+  .card__btn {
+    font-size: 0.9rem; /* Ajustez la taille de police selon vos préférences */
+    padding: 0.3em 0.7em; /* Ajustez les valeurs de padding selon vos préférences */
+  }
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Ajoutez vos styles spécifiques aux tablettes ici */
+}
+
+/* Styles pour les écrans plus larges */
+@media (min-width: 1024px) {
+  /* Ajoutez vos styles spécifiques aux écrans plus larges ici */
+}
 
 
 
 
-
-
-.obj{
-  display:flex;
+/* div objectif */
+.objectif {
+  display: flex;
   justify-content: center;
-text-align: center;
- margin-left: 30%;
- margin-right: 30%;
-margin-bottom: 5%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+.obj {
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.content {
+  flex: 1;
 }
 
 .animated-list {
   list-style: none;
   padding: 0;
-  width: 650px;
-  margin-left: 25%;
 }
-
 
 .animated-list li {
   position: relative;
   padding: 10px;
   border: 1px solid rgb(0, 0, 0);
-margin-bottom: 5%;
-background-color: #edf1f7;
+  margin-bottom: 10px;
+  background-color: #edf1f7;
   transition: background-color 0.3s ease;
 }
 
 .animated-list li:hover {
   background-color: rgb(99, 99, 158);
- 
 }
 
 .animated-list li::before {
@@ -663,25 +685,37 @@ background-color: #edf1f7;
 .animated-list li:hover::before {
   height: 100%;
 }
-.desc {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Divise la section en deux colonnes, 1/3 pour l'image et 2/3 pour le contenu */
-  gap: 20px; /* Ajoute un espacement entre les deux colonnes */
+
+.image {
+  flex: 1;
+  text-align: right;
 }
 
-.image img{
-  margin-top: 25%;
-  margin-right:20%;
-  display: flex;
-  justify-content: center; /* Centre l'image horizontalement */
-  align-items: center; /* Centre l'image verticalement */
-  height: auto; 
+.image img {
+  max-width: 100%;
+  height: auto;
 }
 
-.content{
-  display: flex;
-  align-items: center; /* Centre le contenu verticalement */
+/* Ajouter styles pour les appareils portables */
+
+@media (max-width: 768px) {
+  .objectif {
+    margin-bottom: 5%;
+  }
+
+  .obj,
+  .desc,
+  .content,
+  .image {
+    width: 90%;
+  }
+
+  .animated-list li {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
 }
+/* div objectif */
 
 
 
@@ -691,41 +725,42 @@ background-color: #edf1f7;
 
 
 /* div service */
-.services{
-width: 100%;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-background: #ffffff;
-}
-.s-heading{
-text-align: center;
-}
-.s-heading h1{
-color: #576975;
-font-size: 2rem;
-font-weight:400 ;
-letter-spacing: 1px;
-margin: 0px;
-}
-.s-heading p{
-color: rgba(87,105,117,0.6);
-font-size: 1rem;
-margin: 10px;
-text-align: center;
+.services {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
 }
 
-.s-box span{
-
-display: flex;
-background-size: cover;
-align-items: center;
-width: 170PX;
-height: 150px;
+.s-heading {
+  text-align: center;
 }
 
+.s-heading h1 {
+  color: #576975;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+
+.s-heading p {
+  color: rgba(87, 105, 117, 0.6);
+  font-size: 1rem;
+  margin: 10px;
+  text-align: center;
+}
+
+.s-box span {
+  display: flex;
+  background-size: cover;
+  align-items: center;
+  width: 170px;
+  height: 150px;
+}
 
 .s-box-container {
   display: flex;
@@ -750,57 +785,76 @@ height: 150px;
   position: relative;
 }
 
-
-.s-box h2{
-color: #576975;
-letter-spacing: 1px;
-font-size: 1rem;
-margin-bottom: 8px;
+.s-box h2 {
+  color: #576975;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 
-.s-box:hover{
-box-shadow: 2px 2 px 30px rgba(0,0,0,0.08);
-transition: all ease 0.3s;
+.s-box:hover {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.08);
+  transition: all ease 0.3s;
 }
 
-.bar{
-width: 100px;
-height: 6px;
-position: absolute ;
-left: 50%;
-top: 0px;
-transform: translateX(-50%);
-background-color: #4a90e2;
-border-radius: 0px 0px 10px 10px;
-display: none;
-animation: bar 0.5s ;
-}
-.s-box:hover .bar{
-display: block;
+.bar {
+  width: 100px;
+  height: 6px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  background-color: #4a90e2;
+  border-radius: 0px 0px 10px 10px;
+  display: none;
+  animation: bar 0.5s;
 }
 
-.s-box p{
+.s-box:hover .bar {
+  display: block;
+}
+
+.s-box p {
   color: #5e6366;
   line-height: 1.4;
 }
-.s-box img{
-  background:  transparent; 
-  width: 400px; 
-  height: 150px; 
+
+.s-box img {
+  background: transparent;
+  width: 400px;
+  height: 150px;
   display: flex;
-   justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes bar {
-0%{
-width: 0px ;
-}
-100%{
-width:  100px ;
+/* Ajoutez vos styles par défaut ici */
+
+/* Styles pour les écrans de taille normale */
+
+/* Styles pour les appareils mobiles */
+@media (max-width: 767px) {
+  .s-heading h1 {
+    font-size: 1.5rem; /* Ajustez la taille de la police selon vos préférences */
+  }
+
+  .s-heading p {
+    font-size: 0.8rem; /* Ajustez la taille de la police selon vos préférences */
+  }
+
+  .s-box {
+    flex-basis: 90%; /* Ajustez la largeur selon vos préférences */
+    height: auto;
+    margin: 10px 0;
+    width: 90%; /* Ajustez la largeur selon vos préférences */
+  }
+
+  .s-box img {
+    width: 100%; /* Ajustez la largeur selon vos préférences */
+    height: auto;
+  }
 }
 
-}
 /* div service */
 
 
@@ -822,22 +876,26 @@ width:  100px ;
   border: none;
   border-top: 1px solid #000;
   width: 5%;
- margin-left: 600px;
+  margin-left: 600px;
 }
 
 .contenu .content {
   display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
 }
 
 .contenu .content .half {
   flex: 1;
   text-align: left;
   padding: 20px;
+  box-sizing: border-box; /* Inclure les paddings dans la largeur totale de l'élément */
 }
-.contenu .content .half1{
+
+.contenu .content .half1 {
   margin-left: 15%;
 }
- .contenu .half h3 {
+
+.contenu .half h3 {
   margin-top: 0;
 }
 
@@ -845,6 +903,23 @@ width:  100px ;
   width: 100%;
   height: auto;
 }
+
+/* Ajouter des règles de média queries pour les appareils mobiles */
+@media (max-width: 768px) {
+  .contenu .content .half {
+    flex-basis: 100%; /* L'élément occupe toute la largeur disponible */
+    margin-bottom: 20px;
+  }
+  
+  .contenu .content .half1 {
+    margin-left: 0;
+  }
+  
+  .contenu hr {
+    margin-left: 0;
+  }
+}
+
 /* div contenu */
 
 
@@ -886,93 +961,52 @@ width:  100px ;
 .prix img{
    margin-left: 30%;
 }
+/* Ajoutez vos styles par défaut ici */
+
+/* Styles pour les écrans de taille normale */
+
+/* Styles pour les appareils mobiles */
+@media (max-width: 767px) {
+  .prix {
+    flex-wrap: wrap; /* Faites en sorte que les éléments s'enveloppent pour les appareils mobiles */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    padding: 10px; /* Ajustez le padding selon vos préférences */
+    margin-bottom: 5%;
+  }
+
+  .p1, .p2, .p3 {
+    width: 100%; /* Faites en sorte que les colonnes occupent 100% de la largeur */
+    margin-bottom: 20px; /* Ajoutez un espace entre les éléments */
+  }
+
+  .prix h3, .prix p {
+    margin-left: 0; /* Supprimez les marges latérales pour les éléments de prix */
+    margin-right: 0;
+    text-align: center; /* Centrez le texte horizontalement */
+    font-size: 14px; /* Ajustez la taille de police selon vos préférences */
+  }
+
+  .prix img {
+    margin: 0 auto; /* Centrez l'image horizontalement */
+    display: block; /* Assurez-vous que l'image s'affiche en tant que bloc pour respecter les marges */
+    width: 60%; /* Ajustez la largeur de l'image selon vos préférences */
+    max-width: 200px; /* Limitez la largeur maximale de l'image si nécessaire */
+  }
+  
+  /* Ajoutez d'autres styles spécifiques aux appareils mobiles ici */
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Ajoutez vos styles spécifiques aux tablettes ici */
+}
+
+/* Styles pour les écrans plus larges */
+@media (min-width: 1024px) {
+  /* Ajoutez vos styles spécifiques aux écrans plus larges ici */
+}
+
 /* div  prix */
-
-
-
-
-
-
-
-
-/* footer */
-.footer {
-  width: 100%;
-  height: 200px; /* ou la hauteur souhaitée pour le footer */
-  background-color: #3d8388;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer .partie1 {
-  width: 33.33%;
-}
-
-.footer .partie2 {
-  width: 33.33%;
-}
-
-.footer .partie3 {
-  width: 33.33%;
-}
-
-.footer .partie1 p {
-  margin-top: 10px;
-}
-
-.footer .partie1 h3 {
-  margin-left: 5%;
-}
-
-.footer .partie2 ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 10px;
-}
-
-.footer .partie2 li {
-  margin-bottom: 5px;
-}
-
-.footer .partie3 h4 {
-  margin-bottom: 10px;
-}
-
-.footer .reseaux-sociaux a {
-  color: #fff;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.footer .reseaux-sociaux a:hover {
-  color: #ccc;
-}
-
-.footer .partie3 form {
-  display: flex;
-  margin-top: 10px;
-}
-
-.footer .partie3 input[type="email"] {
-  width: 200px;
-  padding: 5px;
-  border-radius: 3px 0 0 3px;
-  border: none;
-}
-
-.footer .partie3 button[type="submit"] {
-  padding: 5px 10px;
-  border-radius: 0 3px 3px 0;
-  border: none;
-  background-color: #86a1d4;
-  color: #ffffff;
-  cursor: pointer;
-}
-/* footer */
-
-
 
   </style>
 </head>
@@ -982,19 +1016,7 @@ width:  100px ;
 
 
 
-<header>
-        <a href="#" class="logo">Host Oplus</a>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Blogs</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Marketplace</a>
-            <a href="#">Login</a>
-        </nav>
-</header>
+@include('nav')
 
 
 
@@ -1002,23 +1024,6 @@ width:  100px ;
 
 
 
-
-<div class="h-text  h">
-  <div class="l">
-        <div class="h-animate">
-            <h2>Host Oplus</h2>
-            <span class="text first-text">&nbsp;</span>
-            <span class="text sec-text">hebergement Web Maroc</span>
-        </div>
-        <div class="btn">
-            <button class="button">s'inscrire</button>
-            <button class="button">service</button> 
-        </div>
-  </div>
-  <div class="r">
-        <img src="IMG/Capture d'écran 2023-07-12 201603.png" alt="">
-  </div>  
-</div>
 
 
 
@@ -1082,9 +1087,18 @@ width:  100px ;
 
 
     <div class="search-box">
-      <input type="text" class="search-input small-input" placeholder="Ex:exemple.com">
-      <button class="search-btn">Rechercher</button>
-    </div>
+    <form id="domain-search-form" action="{{ route('recherche') }}" method="POST">
+    @csrf
+    <input type="text" name="domain" class="search-input small-input" placeholder="Ex: exemple.com">
+    <button type="submit" class="search-btn">Rechercher</button>
+</form>
+
+    <div id="availability-message"></div>
+</div>
+
+
+
+    
   </div>
 
 
@@ -1314,8 +1328,10 @@ width:  100px ;
 
 
 <div class="objectif">
-  <h2 class="obj">Nous vous créons un site internet clés en main</h2>
-  <p class="obj">De nombreuses fonctionnalités disponibles. Réalisez vos objectifs en demandant l'ajout de fonctionnalités utiles pour votre site internet. Vous pourrez en ajouter plus tard si vous n'avez pas besoin maintenant.</p>
+  <div class="obj">
+  <h2>Nous vous créons un site internet clés en main</h2>
+  <p>De nombreuses fonctionnalités disponibles. Réalisez vos objectifs en demandant l'ajout de fonctionnalités utiles pour votre site internet. Vous pourrez en ajouter plus tard si vous n'avez pas besoin maintenant.</p>
+  </div>
   <div class="desc">
       <div class="content">
       <ul class="animated-list">
@@ -1345,7 +1361,7 @@ width:  100px ;
 
 <section class="services" id="services">
     <div class="s-heading">
-        <h1 style="color: #000;">Création site Internet au Maroc</h1>
+        <h1>Création site Internet au Maroc</h1>
         <p>Des sites beaux et fonctionnels, pour mieux présenter votre activité et vous aider à vendre</p>
     </div>
     <div class="s-box-container">
@@ -1357,10 +1373,12 @@ width:  100px ;
             </span>
             <h2>{{ $carte->titrecarte }}</h2>
             <p>{{ $carte->desccarte }}</p>
+            <a href="{{ route('card.details', ['id' => $carte->id]) }}">More</a>
         </div>
         @endforeach
     </div>
 </section>
+
 
 
 
@@ -1420,33 +1438,39 @@ width:  100px ;
 
 
 
-<footer class="footer">
-  <div class="partie1">
-    <h1>Host Oplus</h1>
-    <p>Hebergement Web</p>
-    <h3>Host Oplus Services d'Hébergement Web et Création & refonte de sites, applications web & mobiles, référencement web & webmarketing.</h3>
-  </div>
-  <div class="partie2">
-    <h4>ADRESSE</h4>
-    <ul>
-      <li><i class="fas fa-map-marker-alt"></i> 58 AVENUE FARHAT HACHAD CITE DAKHLA 80000 AGADIR</li>
-      <li><i class="fas fa-phone"></i> +212 5282-11829, +212 6686-46054, +212 672-849466</li>
-      <li><i class="far fa-envelope"></i> contact@hostoplus.com</li>
-    </ul>
-  </div>
-  <div class="partie3">
-    <h4>NEWSLETTER</h4>
-    <p>Rejoignez-nous sur les réseaux sociaux :</p>
-    <div class="reseaux-sociaux">
-      <a href="#"><i class="fab fa-facebook" style="font-size: 24px; margin-top: 10px;"></i></a>
-      <a href="#"><i class="fab fa-twitter" style="font-size: 24px; margin-top: 10px;"></i></a>
-    </div>
-    <form>
-      <input type="email" placeholder="Votre adresse e-mail">
-      <button type="submit">Envoyer</button>
-    </form>
-  </div>
-</footer>
+@include('footer')
+
+
+
+<!-- recherche -->
+<script>
+    document.getElementById("domain-search-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var domain = document.querySelector(".search-input").value;
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "{{ route('recherche') }}", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+                var isAvailable = response.isAvailable;
+
+                var messageElement = document.getElementById("availability-message");
+
+                if (isAvailable) {
+                    messageElement.textContent = "Le nom de domaine est disponible !";
+                } else {
+                    messageElement.textContent = "Le nom de domaine n'est pas disponible.";
+                }
+            }
+        };
+        xhr.send("domain=" + encodeURIComponent(domain));
+    });
+</script>
+
+
 
 
 

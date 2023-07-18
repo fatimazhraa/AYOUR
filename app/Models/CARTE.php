@@ -9,5 +9,5 @@ class CARTE extends Model
 {
     use HasFactory;
     protected $table = 'creation'; 
-    protected $fillable=[ 'id', 'imgcarte' , 'titrecarte', 'desccarte'];
+    protected $fillable=[ 'id', 'imgcarte' , 'titrecarte', 'desccarte', 'grandtitre', 'imgdetaille', 'titredetaille', 'descdetaille'];
 }
