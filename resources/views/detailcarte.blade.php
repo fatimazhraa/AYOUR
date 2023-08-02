@@ -210,7 +210,7 @@
 
 
 
-    @include('footer')
+@include('layouts.footer')
 
 
 

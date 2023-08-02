@@ -19,4 +19,9 @@ class CARTEController extends Controller
 
     return view('detailcarte', compact('card'));
 }
+
+
+
+
+
 }
