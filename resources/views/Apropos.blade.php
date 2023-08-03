@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +14,7 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
- 
+
 
 .blue-div {
   margin-top: 10%;
@@ -144,7 +143,7 @@
 
 .who{
     padding-top:5%;
-   
+
 }
 
 .colps{
@@ -183,7 +182,7 @@
   transition: transform 0.2s ease;
 }
 .square:hover{
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 
 .crd{
@@ -227,7 +226,7 @@
         <h1>Qui sommes-nous ?</h1>
         <p>Host Oplus est un service proposé par la société Ayour Concept créée par des passionnés du Web, dans le but de fournir des solutions de qualité en Hébergement Web, enregistrement de Noms de Domaine et Certificats SSL.
         Ayant commencé en 2006, nous avons servi des milliers de clients au Monde</p>
-        
+
     </div>
     <img class="col-5" src="IMG/about1.PNG">
 </div>
@@ -239,7 +238,7 @@
           <a class="btn btn-primary"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
           Nous la communauté Web
           </a>
-  
+
         </p>
         <div class="collapse col-5 " id="collapseExample" >
            <div class="card card-body ">
@@ -252,7 +251,7 @@
 <div class="row justify-content-center"  style="text-align:center;"> <h1 class="col-6">Hébergement Web de haute qualité pour les entreprises - Host Oplus.</h1></div>
 <div class="row justify-content-center heberg">
      <div class="col-5 align-self-center">
-        
+
         <p style="font-size:120%;">Host Oplus est une entreprise spécialisée dans l'hébergement et la gestion de sites web pour les entreprises. Nous fournissons des solutions d'hébergement web haut de gamme, adaptées aux besoins de nos clients. Notre mission est d'offrir un service fiable, sécurisé et évolutif pour répondre aux exigences de leurs activités en ligne.
              </p>
      </div>
@@ -426,7 +425,6 @@ Couverture d’accueil, images catégories, bannières,  etc...
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
 

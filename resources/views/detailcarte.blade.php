@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
- <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome-ie7.min.css" integrity="sha512-YSrvaOXIhYlAE8Qj488Nit2KMcOZzqVwe6C6z8D+N0Wq/YHvzAaQNAaBhBZxpqC0cXtM15HlrjIiMXnNda1xVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
 /* Utilisation de variables pour les couleurs */
 :root {
@@ -160,7 +156,7 @@
         <div class="photo">
             <img src="IMG/Capture d'écran 2023-07-16 182316.png" alt="Votre image">
         </div>
-    
+
 </div>
 
 
@@ -183,7 +179,7 @@
                <li><a href="">Référencement De Site Web</a></li>
            <ul>
         </div>
-   
+
        <div class="contentCenter">
             <div class="image"> <img src="{{{ asset('IMG/' . $card->imgdetaille) }}}" alt=""></div>
             <div class="titre"> {{ $card->titredetaille }}</div>
@@ -193,14 +189,14 @@
     </div>
 
 
-    <div class="nums"> 
+    <div class="nums">
           <h2>Support en live</h2>
           <p>+212 5282-11829</p>
 
           <p> +212 6686-46054</p>
 
           <p>+212 672-849466 </p>
-    
+
     </div>
 
 

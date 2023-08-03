@@ -57,11 +57,11 @@ a {
   height: 30px;
   background-color: var(--main-color);
 }
-.headers .top-section ul.pages {
+.headers .top-section .top-section-pages {
   display: flex;
   padding: 0 13px;
 }
-.headers .top-section ul.pages li a {
+.headers .top-section .top-section-pages li a {
   color: #d9f4f3;
   text-transform: uppercase;
   padding-left: 20px;
@@ -85,22 +85,70 @@ a {
 .headers .top-section .info ul.socials {
   display: flex;
 }
+.headers .top-section .info ul.socials li {
+}
+.headers .top-section .info ul.socials li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #d9f4f3;
+}
 .headers .bottom-section {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 70px;
 }
-.headers .bottom-section ul.pages {
+.headers .bottom-section nav {
+  justify-content: flex-start;
+}
+.headers .bottom-section .bottom-section-pages {
   display: flex;
+  flex-wrap: nowrap;
+  padding: 0 21px;
+}
+.headers .bottom-section .bottom-section-pages li a {
+  padding-left: 13px;
+  padding-right: 13px;
+  font-weight: 700;
+  height: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #05144b;
+}
+.headers .bottom-section .bottom-section-pages li.new {
+  position: relative;
+}
+.headers .bottom-section .bottom-section-pages li.new a::after {
+  content: "new";
+  position: absolute;
+  font-size: 8px;
+  right: 12px;
+  top: 8px;
+  border-radius: 2px;
+  background-color: #6c37ae;
+  color: #fff;
+  padding: 0 2px;
 }
 .headers .bottom-section ul.profile {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
   display: flex;
+  align-items: center;
+}
+.headers .bottom-section ul.profile img {
+  margin-right: 12px;
+  margin-left: 12px;
 }
 /* End Header */
 header {
   /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; */
+    top: 0;
+    left: 0;
+    width: 100%; */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -118,7 +166,7 @@ header {
   margin-left: 10%;
 }
 
-nav {
+/* nav {
   display: flex;
   align-items: center;
   margin-right: 10%;
@@ -135,7 +183,7 @@ nav a {
 
 nav a:hover {
   color: rgb(42, 145, 114);
-}
+} */
 
 /* Dropdown Menu */
 .pages-dropdown {

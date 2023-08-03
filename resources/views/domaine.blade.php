@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Document</title>
   <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
- 
+
  * {
    margin: 0;
    padding: 0;
@@ -21,8 +20,8 @@
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -108,7 +107,7 @@ hr{
   font-size: 14px;
   flex: 1;
   margin-right: 10px;
- 
+
 }
 
 .search-btn {
@@ -124,25 +123,25 @@ hr{
     .sous-content3 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .cont {
   display: flex;
-  width: 100%; 
-  max-width: 600px; 
-  margin: 20px; 
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
 }
 
 .left-content {
-  flex: 0 0 100px; 
+  flex: 0 0 100px;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .right-content {
-  flex: 1; 
+  flex: 1;
   padding-left: 20px; /* Add spacing between the icon and text */
 }
 
@@ -156,7 +155,7 @@ hr{
   margin-left:10%;
   margin-right:10%;
   margin-bottom:10%;
-} 
+}
 .content2 .button{
   padding: 10px 20px;
   border: 2px solid #0b8c8c; /* Bordure bleue */
@@ -280,7 +279,7 @@ hr{
 
 
 .left-content {
-  flex: 1; 
+  flex: 1;
   padding-right: 20px;
 }
 
@@ -293,7 +292,7 @@ hr{
 
 
 .right-content {
-  flex: 6; 
+  flex: 6;
 }
 
 
@@ -346,27 +345,27 @@ margin-top:20px;
   flex-basis: 60%;
   margin-right:15px;
  padding: 10px;
-} 
+}
 .p2 h3{
   color:#646464;
   margin-bottom:15px;
 
 }
 .p2 p{
-  line-height: 1.5; 
+  line-height: 1.5;
   font-size:15px;
 }
 .p3{
   flex-basis: 40%;
   margin-right:15px;
  padding: 10px;
-} 
+}
 .p3 h3{
   color:#646464;
   margin-bottom:15px;
 }
 .p3 p{
-  line-height: 1.5; 
+  line-height: 1.5;
   font-size:15px;
 }
 .content4 .btnpartie3{
@@ -425,7 +424,7 @@ margin-top:20px;
     <div class="card1">
       <img src="IMG/Capture d'écran 2023-07-13 211903.png" alt="Image 2"  style= "width: 200px; height:80px;">
       <p>500.00 Dhs /an</p>
-    </div> 
+    </div>
     <div class="card1">
       <img src="IMG/Capture d'écran 2023-07-13 211910.png" alt="Image 2"   style= "width: 200px; height:80px;">
       <p>450.00 Dhs /an</p>
@@ -436,7 +435,7 @@ margin-top:20px;
     <div class="links">
       <button class="custom-button">Enregistrement</button>
       <a href="#" class="link">Transfert</a>
-      
+
     </div>
   <div class="search-box">
     <form id="domain-search-form" action="{{ route('recherche') }}" method="POST">
@@ -449,7 +448,7 @@ margin-top:20px;
 
   <button class="button">EXTENSIONS ET PRIX</button>
 </div>
-  
+
 
   <div class="content3">
     <div class="sous-content3">

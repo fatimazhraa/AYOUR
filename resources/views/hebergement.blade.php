@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
- 
+
  * {
    margin: 0;
    padding: 0;
@@ -23,8 +21,8 @@
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 
 }
         .heberg {
@@ -36,7 +34,7 @@
 
         .row h1{
   color: #0b8c8c;
-  
+
 }
 .row p{
   font-size:15px;
@@ -130,7 +128,7 @@
             padding: 20px;
             color: white;
             margin-bottom:10%;
-       
+
 }
 
     .card-container {
@@ -141,7 +139,7 @@
       margin-left: 10%;
       margin-right: 10%;
     }
-    
+
 .card {
   width: 20%;
   background-color: #ffffff;
@@ -196,25 +194,25 @@
 .content4 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .container {
   display: flex;
-  width: 100%; 
-  max-width: 600px; 
-  margin: 20px; 
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
 }
 
 .left-content {
-  flex: 0 0 100px; 
+  flex: 0 0 100px;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .right-content {
-  flex: 1; 
+  flex: 1;
   padding-left: 20px; /* Add spacing between the icon and text */
 }
 
@@ -224,7 +222,7 @@
   font-size: 1rem;
   margin: 0;
 }
- 
+
 
 
 
@@ -278,58 +276,58 @@ hr{
     <img src="IMG/favpng_data-center-information-technology-it-infrastructure.png" alt="" class="animated-image">
   </div>
 </div>
-        
+
          <div class="service">
             <div class="ser">
             <div class="icon-container">
                     <i class="fas fa-globe fa-3x"></i>
                 </div>
-           
+
             <h3>DATACENTER PREMIUM</h3>
             <p>Un datacenter de 4000 m2 avec garantie de haute disponibilité à un accès réseau Ultra rapide et de raccordement en électricité</p>
-            </div> 
+            </div>
             <div class="ser">
             <div class="icon-container">
             <i class="fas fa-cloud-upload-alt fa-3x"></i>
                 </div>
-            
+
             <h3>DATACENTER PREMIUM</h3>
             <p>Un datacenter de 4000 m2 avec garantie de haute disponibilité à un accès réseau Ultra rapide et de raccordement en électricité</p>
-            </div> 
+            </div>
             <div class="ser">
             <div class="icon-container">
             <i class="fas fa-random fa-3x"></i>
                 </div>
-            
+
             <h3>DATACENTER PREMIUM</h3>
             <p>Un datacenter de 4000 m2 avec garantie de haute disponibilité à un accès réseau Ultra rapide et de raccordement en électricité</p>
-            </div> 
+            </div>
             <div class="ser">
             <div class="icon-container">
             <i class="fas fa-user-friends fa-3x"></i>
                 </div>
-            
+
             <h3>DATACENTER PREMIUM</h3>
             <p>Un datacenter de 4000 m2 avec garantie de haute disponibilité à un accès réseau Ultra rapide et de raccordement en électricité</p>
-            </div> 
+            </div>
             <div class="ser">
             <div class="icon-container">
             <i class="fas fa-th fa-3x"></i>
                 </div>
-            
+
             <h3>DATACENTER PREMIUM</h3>
             <p>Un datacenter de 4000 m2 avec garantie de haute disponibilité à un accès réseau Ultra rapide et de raccordement en électricité</p>
-            </div> 
+            </div>
             <div class="ser">
             <div class="icon-container">
-            <i class="fas fa-shield-alt fa-3x"></i> 
+            <i class="fas fa-shield-alt fa-3x"></i>
                 </div>
-            
+
             <h3>DATACENTER PREMIUM</h3>
             <p>Un datacenter de 4000 m2 avec garantie de haute disponibilité à un accès réseau Ultra rapide et de raccordement en électricité</p>
-            </div> 
+            </div>
         </div>
-   </div> 
+   </div>
 <div class="cards">
    <div class="card-container">
             <div class="card">
@@ -411,13 +409,13 @@ hr{
                 <button>Commencer</button>
             </div>
 
-         
+
         </div>
 
 
 
         <div class="content2">
- 
+
           <div class="sousContent2">
             <div class="list1">
               <ul>
@@ -445,7 +443,7 @@ hr{
             </div>
           </div>
         </div>
-        
+
 
 </div>
 

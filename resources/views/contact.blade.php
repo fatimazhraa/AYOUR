@@ -3,16 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
- <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
- <link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome-ie7.min.css" integrity="sha512-YSrvaOXIhYlAE8Qj488Nit2KMcOZzqVwe6C6z8D+N0Wq/YHvzAaQNAaBhBZxpqC0cXtM15HlrjIiMXnNda1xVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
 </head>
 <body>
@@ -40,7 +31,7 @@ label{
 
 .content1 h1 {
    color:black;
-  
+
   height:50vh;
   padding-top:90px;
 }
@@ -48,14 +39,14 @@ h5{
     color:#0b8c8c;
     text-align:center;
     font-size:30px;
-    
+
     padding-top:10px;
 }
 
 .content1{
     background-color:#f7f9fc;
-    
-    
+
+
 }
 .email-icon{
     color:#0b8c8c;
@@ -67,22 +58,22 @@ h5{
     margin-top:5%;
     padding-top:2%;
     padding-bottom:2%;
-    
-    
+
+
 }
 .card2{
     background-color:#F0F8FF;
     margin-top:5%;
     padding-top:2%;
     padding-bottom:2%;
-    
+
 }
 .card3{
     background-color:#F0F8FF;
     margin-top:5%;
     padding-top:2%;
     padding-bottom:2%;
-    
+
 }
 .tel-icon{
     color:#0b8c8c;
@@ -171,7 +162,7 @@ h5{
             </div>
         </div>
     </div>
-    
+
     <div class="card col-lg-3 card2  col-md-5 ">
         <i class="fas fa-phone-alt tel-icon"></i>
         <div class="card-body">
@@ -204,6 +195,5 @@ h5{
 
 @include('layouts.footer')
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

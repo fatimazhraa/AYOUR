@@ -3,8 +3,6 @@
 <head>
   <!-- Font Awesome Library -->
   <link rel="stylesheet" href="{{ asset('css/lib/all.min.css') }}">
-  <!-- Bootstrap 5 -->
-  <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <!-- Main CSS File -->
   <link rel="stylesheet" href="{{asset('css/header.css')}}">
@@ -16,18 +14,18 @@
 <body>
   <div class="headers">
     <div class="logo-container">
-      <a href="{{ route('home') }}">
-        <img src={{asset('IMG/img-removebg-preview.png')}} alt="" >
+      <a href="#">
+        <img src='imgs/img-removebg-preview.png' alt="">
       </a>
     </div>
     <div class="header-content">
       <div class="top-section">
-        <ul class="pages">
-          <li><a href="{{ route('blog') }}">Blog</a></li>
-          <li><a href="{{ route('condition') }}">Conditions</a></li>
-          <li><a href="{{ route('Hplus') }}">H plus</a></li>
-          <li><a href="{{ route('Apropos') }}">À propos</a></li>
-          <li><a href="{{ route('FAQ') }}">FAQ</a></li>
+        <ul class="top-section-pages">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Conditions</a></li>
+          <li><a href="#">H plus</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">FAQ</a></li>
         </ul>
         <div class="info">
           <span class="phone">
@@ -43,43 +41,49 @@
         </div>
       </div>
       <div class="bottom-section">
-        <ul class="pages">
-          <li><a href="{{ route('home') }}">Acceuil</a></li>
-          <li><a href="{{ route('service') }}">Services</a></li>
-          <li class="new"><a href="#">Hébergement Web</a></li>
-          <li><a href="#">Nindobuilder</a></li>
-          <li><a href="#">Messagerie</a></li>
-          <li><a href="#">Serveurs</a></li>
-          <li><a href="#">Infogérance</a></li>
-          <li><a href="#">SSL</a></li>
+        <ul class="bottom-section-pages">
+          <li><a href="#">Acceuil</a></li>
+          <li><a href="#">Services</a></li>
+          <li class="new"><a href="#">Hébergement</a></li>
+
+          <li><a href="#">Domaine</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <ul class="profile">
-          <li><a href="#"><img src="{{asset('imgs/icon_client_area.svg')}}" alt=""></a></li>
-          <li><a href="#"><img src="{{asset('imgs/icon_cart.svg')}}" alt=""></a></li>
+          <li>
+            <a href="#">
+              <img src="imgs/icon_client_area.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/icon_cart.svg" alt="">
+            </a>
+          </li>
         </ul>
       </div>
     </div>
-    {{-- <nav>
-      <a href="{{ route('home') }}">Acceuil</a>
-      <a href="{{ route('service') }}">Services</a>
-      <a href="{{ route('hebergement') }}">Hébergement</a>
-      <a href="{{ route('VPSCloud') }}">VPS Cloud</a>
-      <a href="{{ route('ServeurDedie') }}">Serveurs Dédiés</a>
-      <a href="{{ route('domaine') }}">Domaine</a>
-      <div class="pages-dropdown">
-          <a href="#">Pages</a>
-          <div class="pages-dropdown-content">
-              <a href="{{ route('Apropos') }}">À propos de</a>
-              <a href="{{ route('FAQ') }}">FAQ</a>
-              <a href="{{ route('Hplus') }}">H plus</a>
-              <a href="{{ route('blog') }}">Blog</a>
-              <a href="{{ route('condition') }}">Conditions</a>
-          </div>
-      </div>
-      <a href="{{ route('contact') }}">Contact</a>
-      <a href="#" class="login-button">Login</a>
-    </nav> --}}
   </div>
+  {{-- <nav>
+    <a href="{{ route('home') }}">Acceuil</a>
+    <a href="{{ route('service') }}">Services</a>
+    <a href="{{ route('hebergement') }}">Hébergement</a>
+    <a href="{{ route('VPSCloud') }}">VPS Cloud</a>
+    <a href="{{ route('ServeurDedie') }}">Serveurs Dédiés</a>
+    <a href="{{ route('domaine') }}">Domaine</a>
+    <div class="pages-dropdown">
+        <a href="#">Pages</a>
+        <div class="pages-dropdown-content">
+            <a href="{{ route('Apropos') }}">À propos de</a>
+            <a href="{{ route('FAQ') }}">FAQ</a>
+            <a href="{{ route('Hplus') }}">H plus</a>
+            <a href="{{ route('blog') }}">Blog</a>
+            <a href="{{ route('condition') }}">Conditions</a>
+        </div>
+    </div>
+    <a href="{{ route('contact') }}">Contact</a>
+    <a href="#" class="login-button">Login</a>
+  </nav> --}}
 
 <script>
    // JavaScript to handle the dropdown menu on hover

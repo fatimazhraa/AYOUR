@@ -72,7 +72,6 @@
 
 
 <script src="{{ asset('js/lib/all.min.js') }}"></script>
-<script src="{{ asset('js/lib/bootstrap.bundle.min.js') }}"></script>
 <!-- recherche -->
 <script>
     document.getElementById("domain-search-form").addEventListener("submit", function(event) {
