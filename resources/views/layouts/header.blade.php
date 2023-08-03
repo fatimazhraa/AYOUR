@@ -45,7 +45,7 @@
       <div class="bottom-section">
         <ul class="pages">
           <li><a href="{{ route('home') }}">Acceuil</a></li>
-          <li><a href="#">Nom de domaine</a></li>
+          <li><a href="{{ route('service') }}">Services</a></li>
           <li class="new"><a href="#">Hébergement Web</a></li>
           <li><a href="#">Nindobuilder</a></li>
           <li><a href="#">Messagerie</a></li>
