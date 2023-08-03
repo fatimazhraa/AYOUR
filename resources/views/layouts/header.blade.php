@@ -15,7 +15,7 @@
   <div class="headers">
     <div class="logo-container">
       <a href="#">
-        <img src='imgs/img-removebg-preview.png' alt="">
+        <img src='{{asset('IMG/img-removebg-preview.png')}}' alt="">
       </a>
     </div>
     <div class="header-content">
@@ -52,12 +52,12 @@
         <ul class="profile">
           <li>
             <a href="#">
-              <img src="imgs/icon_client_area.svg" alt="">
+              <img src="{{asset('IMG/icon_client_area.svg')}}" alt="">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="imgs/icon_cart.svg" alt="">
+              <img src="{{asset('IMG/icon_cart.svg')}}" alt="">
             </a>
           </li>
         </ul>

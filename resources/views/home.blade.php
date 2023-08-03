@@ -61,9 +61,9 @@
 @include('layouts.home.service')
 
 <<<<<<< HEAD
-@include('layouts.contenu')
+@include('layouts.home.contenu')
 
-@include('layouts.prix')
+@include('layouts.home.prix')
 =======
 
 @include('layouts.home.contenu')

@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <title>Host Oplus - Hébergement web</title>
     <style>
           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
- 
+
  * {
    margin: 0;
    padding: 0;
@@ -29,8 +29,8 @@
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -137,7 +137,7 @@
   margin-left:10%;
 }
 .s-box a {
-            text-decoration: none; 
+            text-decoration: none;
         }
 
 
@@ -279,7 +279,7 @@ ul{
 <body>
 @include('layouts.header')
 
- 
+
 
 <div class="row">
   <div class="content">
@@ -292,7 +292,7 @@ ul{
 </div>
 
 
- 
+
 
 
     <section class="services" id="services">
