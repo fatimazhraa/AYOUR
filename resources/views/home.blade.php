@@ -64,12 +64,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 
 @include('layouts.service')
 
-
 @include('layouts.contenu')
 
-
 @include('layouts.prix')
-
 
 @include('layouts.footer')
 

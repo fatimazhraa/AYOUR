@@ -23,7 +23,6 @@ use App\Http\Controllers\SERVICEController;
     $cartes = \App\Models\CARTE::all();
     return view('home', ['cartes' => $cartes]);
 });*/
-
 Route::get('/', [CARTEController::class, 'index'])->name('home');
 Route::get('/card/{id}', [CARTEController::class, 'showDetails'])->name('card.details');
 Route::post('/recherche', [RechercheController::class, 'verifierDisponibilite'])->name('recherche');
@@ -60,3 +59,16 @@ Route::get('/Domaine', function(){
 Route::get('/service', [SERVICEController::class, 'index'])->name('service');
 
 Route::get('/card/{id}', [SERVICEController::class, 'showDetails'])->name('card.details');
+
+
+Route::get('/page-de-telechargement', function () {
+    return view('downloads');
+});
+Route::get('/telecharger-logiciel', function () {
+    $file = public_path('downloads/Hplus ftp client v2.2.exe'); // Assurez-vous de remplacer "nom_du_logiciel.exe" par le nom de votre fichier
+    $headers = [
+        'Content-Type' => 'application/octet-stream',
+    ];
+
+    return response()->download($file, 'Hplus ftp client v2.2.exe', $headers); // Assurez-vous de remplacer "nom_du_logiciel.exe" par le nom de votre fichier
+})->name('telecharger-logiciel');

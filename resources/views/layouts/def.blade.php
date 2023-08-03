@@ -64,7 +64,9 @@
             <h1>Hébergement Web de haute qualité pour les entreprises - Host Oplus.</h1>
             <p>Host Oplus est une entreprise spécialisée dans l'hébergement et la gestion de sites web pour les entreprises. Leur mission est d'offrir des solutions d'hébergement web haut de gamme, adaptées aux besoins spécifiques de leurs clients. Ils mettent l'accent sur la fiabilité, la sécurité et la scalabilité de leurs services pour répondre aux exigences des activités en ligne de leurs clients.</p>
             </div>
-            <div class="p2"></div>
+            <div class="p2">
+                <img src="" alt="">
+            </div>
         </div>
       
     </div>
