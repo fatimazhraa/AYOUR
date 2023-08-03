@@ -4,17 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
- <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
- <link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome-ie7.min.css" integrity="sha512-YSrvaOXIhYlAE8Qj488Nit2KMcOZzqVwe6C6z8D+N0Wq/YHvzAaQNAaBhBZxpqC0cXtM15HlrjIiMXnNda1xVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Host Oplus - Hébergement web Maroc 100% Sécurisé</title>
+  <!-- Website Favicon -->
+  <link rel="shortcut icon" href="{{ asset('IMG/favicon.png') }}" type="image/x-icon">
+
   <style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
- 
+
  * {
    margin: 0;
    padding: 0;
@@ -28,8 +24,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -48,33 +44,35 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 
 @include('layouts.header')
 
-@include('layouts.blue-div')
+@include('layouts.home.blue-div')
 
-@include('layouts.domaine')
+@include('layouts.home.domaine')
 
-@include('layouts.offre')
+@include('layouts.home.offre')
 
-@include('layouts.def')
+@include('layouts.home.def')
 
-@include('layouts.experience')
+@include('layouts.home.experience')
 
-@include('layouts.cards')
+@include('layouts.home.cards')
 
-@include('layouts.objectif')
+@include('layouts.home.objectif')
 
-@include('layouts.service')
-
-
-@include('layouts.contenu')
+@include('layouts.home.service')
 
 
-@include('layouts.prix')
+@include('layouts.home.contenu')
+
+
+@include('layouts.home.prix')
 
 
 @include('layouts.footer')
 
 
 
+<script src="{{ asset('js/lib/all.min.js') }}"></script>
+<script src="{{ asset('js/lib/bootstrap.bundle.min.js') }}"></script>
 <!-- recherche -->
 <script>
     document.getElementById("domain-search-form").addEventListener("submit", function(event) {
@@ -116,7 +114,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 
 
 <script>
-  
+
       const txt = document.querySelector(".sec-text");
       const txtLoad = () => {
         setTimeout(() => {
@@ -128,14 +126,14 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
         setTimeout(() => {
           text.textContent = "ACCRÉDITÉ PAR L ANRT";
         }, 8000);
-        
+
       }
-      
+
       textLoad();
       setInterval(textLoad, 12000);
-      
-      
-      
+
+
+
 </script>
 
 
@@ -144,7 +142,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 
 
 <script>
-  
+
       const text = document.querySelector(".sec-text");
       const textLoad = () => {
         setTimeout(() => {
@@ -160,7 +158,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
           text.textContent = "référencement web & webmarketing";
         }, 12000);
       }
-      
+
       textLoad();
       setInterval(textLoad, 24000);
  </script>
