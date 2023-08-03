@@ -144,14 +144,14 @@
 
 
 
-@include('nav')
+
 
 
 
 <div class="container">
 
         <div class="titre">
-                   <h1>{{ $card->grandtitre }}</h1>
+                   <h1>{{ $card1->grandtitre }}</h1>
         </div>
         <div class="photo">
             <img src="IMG/Capture d'écran 2023-07-16 182316.png" alt="Votre image">
@@ -171,19 +171,16 @@
            <h2>Our Services</h2>
            <hr>
             <ul>
-               <li><a href="">Création de Site Vitrine</a></li>
-               <li><a href="">Création de Site One Page</a></li>
-               <li><a href="">Création de site e-commerce</a></li>
-               <li><a href="">Solution sur Mesure</a></li>
-               <li><a href="">Applications mobiles</a></li>
-               <li><a href="">Référencement De Site Web</a></li>
+            @foreach ($card2 as $carte)
+               <li><a href="{{ route('card.details', ['id' => $carte->id]) }}">{{ $carte->grandtitre }}</a></li>
+               @endforeach 
            <ul>
         </div>
 
        <div class="contentCenter">
-            <div class="image"> <img src="{{{ asset('IMG/' . $card->imgdetaille) }}}" alt=""></div>
-            <div class="titre"> {{ $card->titredetaille }}</div>
-            <div class="description"> {{ $card->descdetaille }}</div>
+            <div class="image"> <img src="{{{ asset('IMG/' . $card1->imgdetaille) }}}" alt=""></div>
+            <div class="titre"> {{ $card1->titredetaille }}</div>
+            <div class="description"> {{ $card1->descdetaille }}</div>
        </div>
 
     </div>

@@ -60,12 +60,17 @@
 
 @include('layouts.home.service')
 
+<<<<<<< HEAD
+@include('layouts.contenu')
+
+@include('layouts.prix')
+=======
 
 @include('layouts.home.contenu')
 
 
 @include('layouts.home.prix')
-
+>>>>>>> 949c80d62912c404e9f88d66aa114e36930ed71b
 
 @include('layouts.footer')
 
