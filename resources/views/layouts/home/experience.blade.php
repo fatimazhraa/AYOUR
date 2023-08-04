@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
     <style>
-      
+
         .main-container {
             text-align: center;
             padding: 20px;
@@ -50,7 +46,7 @@
         font-size: 20px;
         line-height: 1.6;
         margin: 10px 0;
-        text-align: left; 
+        text-align: left;
     }
 
 
@@ -125,7 +121,7 @@
 <div class="main-container">
     <div class="first-div d-flex">
         <div class="text-content col-5">
-          <h1>52,147</h1> 
+          <h1>52,147</h1>
           <h2>Les entreprises grandissent et réussissent en utilisant nos services.</h2>
             <p>Rassemblez rapidement les utilisateurs B2B et les potentialités mondiales.
             Plagiez progressivement le commerce électronique de niveau de ressource grâce aux compétences de base de nivellement des ressources.
@@ -139,7 +135,7 @@
       <div class="experience">
         <h2>17</h2>
         <h3>Years Experience</h3>
-        <p>Compellingly embrace empowered e-business after user friendly intellectual capital. Interactively actualize front-end processes with effective convergence.</p>  
+        <p>Compellingly embrace empowered e-business after user friendly intellectual capital. Interactively actualize front-end processes with effective convergence.</p>
       </div>
 
       <div class="cards-container">
@@ -162,6 +158,5 @@
       </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

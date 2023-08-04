@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
- 
+
  .prix {
   /* Remove the margin-left and margin-right to center the elements */
   margin: 0 auto;
@@ -40,7 +37,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 10%;
-    margin-right: 10%; 
+    margin-right: 10%;
 }
 
 .prix img{
@@ -77,7 +74,7 @@
     width: 60%; /* Ajustez la largeur de l'image selon vos préférences */
     max-width: 200px; /* Limitez la largeur maximale de l'image si nécessaire */
   }
-  
+
   /* Ajoutez d'autres styles spécifiques aux appareils mobiles ici */
 }
 
@@ -97,7 +94,7 @@
 <body>
 <h2 style="display: flex;  justify-content: center;  align-items: center; margin-left: 10%; margin-right: 10%; color: #0b8c8c;" >VOS PRIX JUSQU'À -50% COMPARÉS AUX PRIX DE NOS PRODUITS</h2>
 <div class="prix">
-  
+
   <div class="p1">
      <img src="IMG/Capture d'écran 2023-07-13 154446.png" alt="">
      <h3>LES MEILLEURS PRIX DE L'HÉBERGEMENT WEB</h3>

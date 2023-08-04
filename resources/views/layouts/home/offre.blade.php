@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
         .offre{
             margin-bottom:10%;
@@ -31,25 +28,25 @@
       /* Add a container to style each card */
       .carte-container {
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         flex-wrap: wrap;
       }
 
-     
+
       .carte1 {
-        flex-basis: 45%; 
+        flex-basis: 45%;
         text-align: left;
         margin: 10px; /* Add a small margin between the cards */
         padding: 15px; /* Add padding to create space within each card */
       }
 
-      
+
       .carte1 ul {
         list-style: none;
         padding: 0;
       }
 
-      
+
       .carte1 li {
         margin-bottom: 5px;
       }
