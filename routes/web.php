@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CARTEController;
 use App\Http\Controllers\RechercheController;
 use App\Http\Controllers\SERVICEController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,9 +46,9 @@ Route::get('/FAQ', function(){
 Route::get('/Hplus', function(){
     return view('Hplus');
 })->name('Hplus');
-Route::get('/Blog', function(){
-    return view('blog');
-})->name('blog');
+//Route::get('/Blog', function(){
+   // return view('blog');
+//})->name('blog');
 Route::get('/Condition', function(){
     return view('condition');
 })->name('condition');
@@ -72,3 +74,7 @@ Route::get('/telecharger-logiciel', function () {
 
     return response()->download($file, 'Hplus ftp client v2.2.exe', $headers); // Assurez-vous de remplacer "nom_du_logiciel.exe" par le nom de votre fichier
 })->name('telecharger-logiciel');
+
+
+Route::get('/Blog/{id}', [PostController::class, 'show'])->name('post.show');
+Route::Resource('/Blog',PostController::class);
