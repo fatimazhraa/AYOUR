@@ -4,7 +4,7 @@
   <!-- Font Awesome Library -->
   <link rel="stylesheet" href="{{ asset('css/lib/all.min.css') }}">
   <!-- Main CSS File -->
-  <link rel="stylesheet" href="{{asset('css/header.css')}}">
+  <link rel="stylesheet" href="{{asset('css/style.css')}}">
   <!-- Google Fonts - Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     <div class="header-content">
       <div class="top-section">
         <ul class="top-section-pages">
-          <li><a href="{{ route('blog') }}">Blog</a></li>
+          <li><a href="#">Blog</a></li>
           <li><a href="{{ route('condition') }}">Conditions</a></li>
           <li><a href="{{ route('Hplus') }}">H plus</a></li>
           <li><a href="{{ route('Apropos') }}">À propos</a></li>
