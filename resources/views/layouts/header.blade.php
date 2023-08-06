@@ -20,7 +20,7 @@
     <div class="header-content">
       <div class="top-section">
         <ul class="top-section-pages">
-          <li><a href="{{ route('blog') }}">Blog</a></li>
+          <li><a href="#">Blog</a></li>
           <li><a href="{{ route('condition') }}">Conditions</a></li>
           <li><a href="{{ route('Hplus') }}">H plus</a></li>
           <li><a href="{{ route('Apropos') }}">À propos</a></li>

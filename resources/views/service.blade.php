@@ -37,9 +37,7 @@
   align-items: center;
   flex-direction: column;
   background: #ffffff;
-  margin-bottom:10%;
-  margin-right:10%;
-  margin-left:10%;
+  margin:10%;
 }
 
 .s-heading {
@@ -255,7 +253,6 @@ ul{
 }
 .row p{
   font-size:25px;
-  margin-left:20px;
 }
 .row {
   display: flex;
@@ -271,6 +268,15 @@ ul{
   margin-left: 20px; /* Add some margin to separate the image from the content */
 }
 
+#lock {
+ width: 65%;
+ height: 65%;  
+}
+.content{
+text-align left;
+}
+
+
 </style>
 </head>
 <body>
@@ -285,7 +291,7 @@ ul{
       L'agence web Host Oplus accompagne les entreprises dans leurs projets digitaux.
     </p>
   </div>
-  <img src="IMG/Capture d'écran 2023-07-30 171725.png" alt="">
+  <img id="lock" src="IMG/about5.png">
 </div>
 
 
