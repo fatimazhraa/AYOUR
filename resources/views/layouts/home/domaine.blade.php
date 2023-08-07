@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
 
 .recherche {
@@ -142,7 +139,7 @@
     <div class="card1">
       <img src="IMG/Capture d'écran 2023-07-13 211903.png" alt="Image 2"  style= "width: 200px; height:80px;">
       <p>500.00 Dhs /an</p>
-    </div> 
+    </div>
     <div class="card1">
       <img src="IMG/Capture d'écran 2023-07-13 211910.png" alt="Image 2"   style= "width: 200px; height:80px;">
       <p>450.00 Dhs /an</p>

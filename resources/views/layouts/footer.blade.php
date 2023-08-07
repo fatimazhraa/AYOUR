@@ -1,11 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
+<html lang="fr">
 <body>
     <style>
       .foot{
@@ -131,7 +126,7 @@
   .partie3 button[type="submit"] {
     width: 80%;
   }
-  
+
   /* Ajoutez d'autres styles spécifiques aux appareils mobiles ici */
 }
 
@@ -145,8 +140,8 @@
   /* Ajoutez vos styles spécifiques aux écrans plus larges ici */
 }
 .hrfooter{
-  width:60px; 
-   height:3px;  
+  width:60px;
+   height:3px;
    color:#0b8c8c;
   }
  .logofooter{

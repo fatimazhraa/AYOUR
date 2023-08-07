@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +7,8 @@
   <title>Host Oplus - Hébergement web Maroc 100% Sécurisé</title>
   <!-- Website Favicon -->
   <link rel="shortcut icon" href="{{ asset('IMG/favicon.png') }}" type="image/x-icon">
-
-  <style>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   scroll-behavior: smooth;
-   font-family: 'Poppins', sans-serif;
- }
-
-
- body {
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-
-  </style>
-
-
-
 </head>
 <body>
-
-
-
-
 
 @include('layouts.header')
 
@@ -60,17 +28,9 @@
 
 @include('layouts.home.service')
 
-<<<<<<< HEAD
 @include('layouts.home.contenu')
 
 @include('layouts.home.prix')
-=======
-
-@include('layouts.home.contenu')
-
-
-@include('layouts.home.prix')
->>>>>>> 949c80d62912c404e9f88d66aa114e36930ed71b
 
 @include('layouts.footer')
 

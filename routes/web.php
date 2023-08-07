@@ -4,7 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CARTEController;
 use App\Http\Controllers\RechercheController;
 use App\Http\Controllers\SERVICEController;
+<<<<<<< HEAD
 use App\Http\Controllers\SERVICEADMINController;
+=======
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
+>>>>>>> 5935b2ce8631f1b4bd62a507f1c37b9d174dbf53
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,9 +50,9 @@ Route::get('/FAQ', function(){
 Route::get('/Hplus', function(){
     return view('Hplus');
 })->name('Hplus');
-Route::get('/Blog', function(){
-    return view('blog');
-})->name('blog');
+//Route::get('/Blog', function(){
+   // return view('blog');
+//})->name('blog');
 Route::get('/Condition', function(){
     return view('condition');
 })->name('condition');
@@ -78,38 +83,6 @@ Route::get('/admin', function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //ADMIN
 
    //SERVICE
@@ -129,3 +102,7 @@ Route::get('/admin', function () {
       Route::get('/delete', [SERVICEADMINController::class, 'DataTableindex2'])->name('delete');
       Route::get('/deletepage{id}', [SERVICEADMINController::class, 'DeleteActionIndex']);
       Route::get('supprimer{id}', [SERVICEADMINController::class, 'supprimer']);
+
+
+Route::get('/blog/{id}', [PostController::class, 'show'])->name('post.show');
+Route::Resource('/blog',PostController::class);

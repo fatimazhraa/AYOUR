@@ -6,11 +6,8 @@
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link href='http://fonts.googleapis.com/css?family=Roto:bo400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 
     <title>Host Oplus - Hébergement web</title>
     <style>
@@ -40,9 +37,7 @@
   align-items: center;
   flex-direction: column;
   background: #ffffff;
-  margin-bottom:10%;
-  margin-right:10%;
-  margin-left:10%;
+  margin:10%;
 }
 
 .s-heading {
@@ -258,7 +253,6 @@ ul{
 }
 .row p{
   font-size:25px;
-  margin-left:20px;
 }
 .row {
   display: flex;
@@ -274,6 +268,15 @@ ul{
   margin-left: 20px; /* Add some margin to separate the image from the content */
 }
 
+#lock {
+ width: 65%;
+ height: 65%;  
+}
+.content{
+text-align left;
+}
+
+
 </style>
 </head>
 <body>
@@ -288,7 +291,7 @@ ul{
       L'agence web Host Oplus accompagne les entreprises dans leurs projets digitaux.
     </p>
   </div>
-  <img src="IMG/Capture d'écran 2023-07-30 171725.png" alt="">
+  <img id="lock" src="IMG/about5.png">
 </div>
 
 
