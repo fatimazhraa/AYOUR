@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CARTEController;
 use App\Http\Controllers\RechercheController;
 use App\Http\Controllers\SERVICEController;
+use App\Http\Controllers\SERVICEADMINController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -72,3 +73,59 @@ Route::get('/telecharger-logiciel', function () {
 
     return response()->download($file, 'Hplus ftp client v2.2.exe', $headers); // Assurez-vous de remplacer "nom_du_logiciel.exe" par le nom de votre fichier
 })->name('telecharger-logiciel');
+Route::get('/admin', function () {
+    return view('admin.home');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ADMIN
+
+   //SERVICE
+      //ajouter
+
+      Route::get('/ajouter-service',[SERVICEADMINController::class,'index'])->name('ajouter-service');
+      Route::post('/Enregistrer',[SERVICEADMINController::class, 'store'])->name('store.service');
+
+      //modifier
+
+      Route::get('/update', [SERVICEADMINController::class, 'DataTableindex'])->name('update');
+      Route::get('/edit{id}', [SERVICEADMINController::class, 'DataUpdateIndex']);
+      Route::post('/dataUpdate{id}', [SERVICEADMINController::class, 'DataUpdate']);
+
+      //supprimer
+
+      Route::get('/delete', [SERVICEADMINController::class, 'DataTableindex2'])->name('delete');
+      Route::get('/deletepage{id}', [SERVICEADMINController::class, 'DeleteActionIndex']);
+      Route::get('supprimer{id}', [SERVICEADMINController::class, 'supprimer']);
