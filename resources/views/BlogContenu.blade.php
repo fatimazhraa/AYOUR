@@ -138,7 +138,7 @@
      <hr class="w-50 ">
      
      @foreach($categories as $category)
-           <p><a href="{{ route('Blog.index', ['category' => $category->id]) }}">{{$category->name}}</a></p>
+           <p><a href="{{ route('blog.index', ['category' => $category->id]) }}">{{$category->name}}</a></p>
      @endforeach
      
      <h5 class="mt-5">Latest Post</h5>
