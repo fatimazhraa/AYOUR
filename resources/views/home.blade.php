@@ -143,7 +143,7 @@
 
 
 
-
+<script src="{{ asset('Homejs/domain_check.js') }}"></script>
 
 <script>
 
@@ -162,7 +162,7 @@
           text.textContent = "référencement web & webmarketing";
         }, 12000);
       }
-
+      
       textLoad();
       setInterval(textLoad, 24000);
  </script>

@@ -76,5 +76,14 @@ Route::get('/telecharger-logiciel', function () {
 })->name('telecharger-logiciel');
 
 
-Route::get('/Blog/{id}', [PostController::class, 'show'])->name('post.show');
-Route::Resource('/Blog',PostController::class);
+Route::get('/blog/{id}', [PostController::class, 'show'])->name('post.show');
+Route::Resource('/blog',PostController::class);
+
+
+
+Route::get('/check-domain', [DomainController::class, 'checkDomain'])->name('check.domain');
+
+
+
+
+

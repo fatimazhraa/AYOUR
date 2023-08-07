@@ -111,12 +111,12 @@
   <p>Vérifiez la disponibilité de votre nom de domaine</p>
 
   <div class="search-box">
-    <form id="domain-search-form" action="{{ route('recherche') }}" method="POST">
+    <form id="domain-search-form" action="{{ route('check.domain') }}" method="GET">
       @csrf
       <input type="text" name="domain" class="search-input small-input" placeholder="Ex: exemple.com">
       <button type="submit" class="search-btn">Rechercher</button>
     </form>
-    <div id="availability-message"></div>
+    <div id="result"></div>
   </div>
 
   <p>Nous disposons de plus de 200 extensions de noms de domaine.</p>
@@ -149,5 +149,8 @@
     </div>
   </div>
 </div>
+
+
+<script src="{{ asset('../../Homejs/domain_check.js') }}"></script>
 </body>
 </html>

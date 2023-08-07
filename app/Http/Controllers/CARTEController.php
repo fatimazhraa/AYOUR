@@ -9,6 +9,8 @@ class CARTEController extends Controller
 {
     public function index()
     {
+       
+
         $cartes = CARTE::all();
         return view('home', ['cartes' => $cartes]);
     }
@@ -18,6 +20,25 @@ class CARTEController extends Controller
     // Effectuez toute autre logique supplémentaire ou récupération de données ici
 
     return view('detailcarte', compact('card'));
+}
+
+public function checkDomain(Request $request)
+{
+    
+    $domainName = $data = $request->input('domain_name');;
+    $dnsRecord = dns_get_record($domainName);
+     
+    if (empty($dnsRecord)) {
+       // Domain name does not exist...
+
+        
+        
+
+        return response()->json(['exists' => 'false']);
+    } else {
+        // Domain name exists...
+        return response()->json(['exists' => 'true']);
+    }
 }
 
 
