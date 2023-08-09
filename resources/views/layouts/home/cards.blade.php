@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
     <style>
         .cont {
             width: 100%;
@@ -15,13 +11,13 @@
             margin-bottom:10%;
         }
 
-        .header {
+        .card-header {
             text-align: center;
             padding: 20px 0;
             margin-right:10%;
             margin-left:10%;
         }
-      
+
         .card-container {
         display: flex;
         justify-content: space-around;
@@ -78,11 +74,11 @@
 </head>
 <body>
 <div class="cont">
-        <div class="header">
- 
+        <div class="card-header">
+
                 <h1>L'HÉBERGEMENT LINUX EN ILLIMITÉ AVEC CPANEL ET 100% SSD</h1>
                 <p>Découvrez nos offres d'Hébergement de Site WEB en illimité avec cpanel et 100% ssd, aujourd'hui nous offrons un nouveau service rassemblant la rapidité et la fiabilité pour tous.</p>
-         
+
         </div>
         <div class="card-container">
             <div class="card">
@@ -164,6 +160,6 @@
                 <button>Commencer</button>
             </div>
         </div>
-</div> 
+</div>
 </body>
 </html>
