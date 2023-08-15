@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\CARTE;
 use Illuminate\Http\Request;
+use App\Http\Livewire\DomainSearch;
 
 class CARTEController extends Controller
 {
     public function index()
     {
+       
+
         $cartes = CARTE::all();
-        return view('home', ['cartes' => $cartes]);
+        return view('home', ['cartes' => $cartes,'domainSearch' => DomainSearch::class]);
     }
     public function showDetails($id)
 {
@@ -19,6 +22,8 @@ class CARTEController extends Controller
 
     return view('detailcarte', compact('card'));
 }
+
+
 
 
 

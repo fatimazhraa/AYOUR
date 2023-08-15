@@ -7,8 +7,16 @@ use App\Http\Controllers\SERVICEController;
 use App\Http\Controllers\SERVICEADMINController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CategoryController;
+<<<<<<< HEAD
 use App\Http\Controllers\BLOGADMINController;
 use App\Http\Controllers\MessageController;
+=======
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\DomaineController;
+
+
+
+>>>>>>> 0120991de277d5a6d4bb487abfdcf584ce3e82f0
 
 
 Route::get('/', [CARTEController::class, 'index'])->name('home');
@@ -65,6 +73,16 @@ Route::get('/admin', function () {
 });
 
 
+Route::get('/blog/{id}', [PostController::class, 'show'])->name('post.show');
+Route::Resource('/blog',PostController::class);
+
+
+
+
+
+
+
+
 //ADMIN
 
    //SERVICE
@@ -114,5 +132,13 @@ Route::post('/marquer-repondu/{id}', [MessageController::class, 'marquerRepondu'
 
 
 Route::Resource('/blog',PostController::class);
+<<<<<<< HEAD
 Route::get('/blog/{id}', [PostController::class, 'show'])->name('post.show');
+=======
+
+
+Route::get('/check-domain', [DomaineController::class, 'checkDomain'])->name('check.domain');
+
+
+>>>>>>> 0120991de277d5a6d4bb487abfdcf584ce3e82f0
 
