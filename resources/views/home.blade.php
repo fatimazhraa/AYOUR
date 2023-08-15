@@ -7,8 +7,11 @@
   <title>Host Oplus - Hébergement web Maroc 100% Sécurisé</title>
   <!-- Website Favicon -->
   <link rel="shortcut icon" href="{{ asset('IMG/favicon.png') }}" type="image/x-icon">
+<<<<<<< HEAD
+=======
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   @livewireStyles
+>>>>>>> 0120991de277d5a6d4bb487abfdcf584ce3e82f0
   <style>
 
 .recherche {
@@ -54,8 +57,13 @@
 
 .search-btn {
   padding: 10px 20px;
+<<<<<<< HEAD
+  background-color: black;
+  color: #fff;
+=======
   background-color: #0b8c8c;
   color: black;
+>>>>>>> 0120991de277d5a6d4bb487abfdcf584ce3e82f0
   border: none;
   border-radius: 0 5px 5px 0;
   font-size: 14px;
@@ -116,10 +124,11 @@
 
 @include('layouts.home.blue-div')
 
-<div class="recherche ">
-   <div class="d-flex">
+<div class="recherche">
+   <div >
     @livewire('domain-search')
     </div>
+>>>>>>> 0120991de277d5a6d4bb487abfdcf584ce3e82f0
 
   <p>Nous disposons de plus de 200 extensions de noms de domaine.</p>
   <div class="card-container">
@@ -127,7 +136,11 @@
       <img src="IMG/Capture d'écran 2023-07-29 122418.png" alt="Image 1">
       <p>120.00 Dhs /an</p>
     </div>
+<<<<<<< HEAD
+
+=======
       
+>>>>>>> 0120991de277d5a6d4bb487abfdcf584ce3e82f0
     <div class="card1">
       <img src="IMG/Capture d'écran 2023-07-13 211842.png" alt="Image 2" style= "width: 200px; height:80px;">
       <p>120.00 Dhs /an</p>

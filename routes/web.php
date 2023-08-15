@@ -7,6 +7,10 @@ use App\Http\Controllers\SERVICEController;
 use App\Http\Controllers\SERVICEADMINController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CategoryController;
+<<<<<<< HEAD
+use App\Http\Controllers\BLOGADMINController;
+use App\Http\Controllers\MessageController;
+=======
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DomaineController;
 
@@ -17,6 +21,7 @@ use App\Http\Controllers\ResetPasswordController;
 
 
 
+>>>>>>> 0120991de277d5a6d4bb487abfdcf584ce3e82f0
 
 
 Route::get('/', [CARTEController::class, 'index'])->name('home');
@@ -95,14 +100,44 @@ Route::get('/admin', function () {
       Route::get('/deletepage{id}', [SERVICEADMINController::class, 'DeleteActionIndex']);
       Route::get('supprimer{id}', [SERVICEADMINController::class, 'supprimer']);
 
+  //BLOG
+     //ajouter
+     Route::get('/ajouter', [BLOGADMINController::class, 'DataTableindex'])->name('ajouter');
+     Route::get('/ajouter-carte{id}', [BLOGADMINController::class, 'DataAjouterIndex']);
+     Route::post('/Enregistrer-carte',[BLOGADMINController::class, 'store'])->name('store.blog');
+     //modifier
+     Route::get('/updateB', [BLOGADMINController::class, 'DataTable'])->name('updateB');
+      Route::get('/Blog_edit{id}', [BLOGADMINController::class, 'DataUpdate']);
 
-Route::get('/blog/{id}', [PostController::class, 'show'])->name('post.show');
+      Route::post('/BlogdataUpdate{id}', [BLOGADMINController::class, 'DataUpdateBlog']);
+      //supprimer
+
+      Route::get('/delete-Blog', [BLOGADMINController::class, 'DataTableindex2'])->name('Blog-delete');
+      Route::get('/deletepage-Blog{id}', [BLOGADMINController::class, 'DeleteActionIndex']);
+      Route::get('supprimer-Blog{id}', [BLOGADMINController::class, 'supprimer']);
+
+
+
+//message
+Route::get('/domaine', [MessageController::class, 'index'])->name('domaine');
+Route::post('/submit-form', [MessageController::class, 'store'])->name('submit.form');
+Route::get('/message', [MessageController::class, 'show'])->name('message');
+Route::post('/marquer-repondu/{id}', [MessageController::class, 'marquerRepondu'])->name('marquer.repondu');
+
+
+
+
+
 Route::Resource('/blog',PostController::class);
+<<<<<<< HEAD
+Route::get('/blog/{id}', [PostController::class, 'show'])->name('post.show');
+=======
 
 
 Route::get('/check-domain', [DomaineController::class, 'checkDomain'])->name('check.domain');
 
 
+>>>>>>> 0120991de277d5a6d4bb487abfdcf584ce3e82f0
 
 Route::get('/login', [LoginController::class, 'show'])->name('login.show');
 Route::post('/login', [LoginController::class, 'login'])->name('login');    
