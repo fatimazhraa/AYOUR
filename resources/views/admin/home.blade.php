@@ -381,9 +381,9 @@ border-radius: 4px;
     <span class="arrow-icon">></span>
 </div>
 <div class="sub-menu" id="sub-menu3" style="display: none;">
-    <div class="sub-menu-option">Ajouter</div>
-    <div class="sub-menu-option">Supprimer</div>
-    <div class="sub-menu-option">Modifier</div>
+    <div class="sub-menu-option"><a href="{{route('ajouter')}}">Ajouter</a></div>
+    <div class="sub-menu-option"><a href="{{route('updateB')}}">Modifier</a></div>
+    <div class="sub-menu-option"><a href="{{route('Blog-delete')}}">Supprimer</a></div>
 </div>
 
 
@@ -393,7 +393,9 @@ border-radius: 4px;
 ""
 							class="nav-img"
 							alt="">
-						<p> Message</p>
+							<a href="{{route('message')}}"><p> Message</p></a>
+							
+						
 					</div>
 
 					<div class="nav-option option6">
@@ -401,7 +403,8 @@ border-radius: 4px;
 ""
 							class="nav-img"
 							alt="">
-						<p> Domaine</p>
+							<a href="{{route('domaine')}}"><p> Domaine</p></a>
+						
 					</div>
 
 					<div class="nav-option logout">
