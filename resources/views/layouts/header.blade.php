@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <div class="header">
@@ -268,9 +269,21 @@
         </ul>
         <ul class="profile">
           <li>
-            <a href="#">
+            @guest
+            <a href="{{route('login.show')}}">
               <img src="{{asset('IMG/icon_client_area.png')}}" alt="">
             </a>
+            @endguest
+            @auth
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             {{auth()->user()->nom}}
+            </button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{route('login.logout')}}">Déconnexion</a></li>
+            </ul>
+            </div>
+            @endauth
           </li>
           <li>
             <a href="#">

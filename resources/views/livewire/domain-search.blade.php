@@ -11,7 +11,7 @@
 
 
 
-    <form wire:submit.prevent="searchDomain" class="form-group d-flex align-items-between row">
+    <form wire:submit.prevent="searchDomain" class="form-group d-flex align-items-around ">
     <input  wire:model="domain"   type="text" id="domain" name="domain" class="form-control" placeholder="example.com" style="padding: 10px; border: 1px solid #ccc;" class="col-6">
     <button type="submit" class="btn btn-primary ml-2 col-3">Search</button>
     </form>

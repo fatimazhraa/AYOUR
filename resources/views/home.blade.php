@@ -116,8 +116,8 @@
 
 @include('layouts.home.blue-div')
 
-<div class="recherche">
-   <div >
+<div class="recherche ">
+   <div class="d-flex">
     @livewire('domain-search')
     </div>
 

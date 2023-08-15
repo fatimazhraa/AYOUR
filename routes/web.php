@@ -10,6 +10,11 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\DomaineController;
 
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\ResetPasswordController;
+
 
 
 
@@ -68,14 +73,6 @@ Route::get('/admin', function () {
 });
 
 
-Route::get('/blog/{id}', [PostController::class, 'show'])->name('post.show');
-Route::Resource('/blog',PostController::class);
-
-
-
-
-
-
 
 
 //ADMIN
@@ -107,3 +104,23 @@ Route::get('/check-domain', [DomaineController::class, 'checkDomain'])->name('ch
 
 
 
+Route::get('/login', [LoginController::class, 'show'])->name('login.show');
+Route::post('/login', [LoginController::class, 'login'])->name('login');    
+Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout'); 
+
+
+Route::get('/register',[RegisterController::class, 'create'])->name('register.create');
+Route::post('/register',[RegisterController::class, 'store'])->name('register.store');
+
+
+
+
+
+Route::get('reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
+
+
+Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
+Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
+Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
+Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');

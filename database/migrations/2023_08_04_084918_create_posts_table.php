@@ -11,10 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
+        if(Schema::hasTable('posts')) return; 
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('titre');
+            $table->string('slug');
             $table->timestamps();
+            $table->longText('description');
+            $table->string('image_path');
+            $table->unsignedBigInteger('category_id')->references('id')->on('categories');
         });
+
     }
 
     /**
